@@ -2,4 +2,6 @@
 
 - create interface
     - get basic functionality down first
+    - Create a Jpanel visual for Dpad control, Dpad values are already coded for in the function gethpos() in Visual Interface,
+    we just need to create a visual to incorportate these values. When Dpad is pressed up the value is 0.25, left 1.0, right 0.5, down 0.75.
 - create 3D model for ROV (optional)

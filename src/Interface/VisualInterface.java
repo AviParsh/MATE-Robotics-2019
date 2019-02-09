@@ -66,6 +66,7 @@ public class VisualInterface {
             hstick = gethpos();
             leftSlider.setValue(yvall);
             rightSlider.setValue(yvalr);
+            System.out.println(hstick);
 
         }
 
