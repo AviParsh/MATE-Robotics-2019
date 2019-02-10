@@ -15,6 +15,7 @@ public class VisualInterface {
         JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame("Visual Interface");
         JPanel panel = new JPanel();
+        Container c = frame.getContentPane();
 
         JSlider leftSlider = new JSlider(JSlider.VERTICAL, -50, 50, 0);
         Dimension dl = leftSlider.getPreferredSize();
@@ -31,9 +32,16 @@ public class VisualInterface {
 
         // Add positions label in the slider
         Hashtable position = new Hashtable();
-        position.put(-50, new JLabel("-50"));
-        position.put(0, new JLabel("0"));
-        position.put(50, new JLabel("50"));
+        JLabel l1 = new JLabel("-50");
+        JLabel l2 = new JLabel("0");
+        JLabel l3 = new JLabel("50");
+        l1.setForeground(Color.white);
+        l2.setForeground(Color.white);
+        l3.setForeground(Color.white);
+
+        position.put(-50, l1);
+        position.put(0, l2);
+        position.put(50, l3);
 
         // Set the label to be drawn
         leftSlider.setLabelTable(position);
@@ -42,10 +50,17 @@ public class VisualInterface {
         panel.add(rightSlider,BorderLayout.EAST);
 
         frame.setLayout(new BorderLayout());
-        panel.setBorder(BorderFactory.createLineBorder(Color.black,3));
+        panel.setBorder(BorderFactory.createLineBorder(Color.white,3));
         frame.add(panel,BorderLayout.EAST);
         frame.setSize(1500,800);
         frame.setVisible(true);
+        leftSlider.setBackground(new Color(44,62,80));
+        rightSlider.setBackground(new Color(44,62,80));
+        panel.setBackground(new Color(84, 110, 122));
+
+        c.setBackground(new Color(44,62,80));
+
+
         // Check if the controller was found.
         if (!joystick.isControllerConnected()) {
             System.out.println("No controller found!");
