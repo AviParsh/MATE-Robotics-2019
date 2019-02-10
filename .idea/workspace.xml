@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="242af0cf-45ba-4596-a1d4-5258b9dcba4c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Graphics/Compass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graphics/Images/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/VisualInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/VisualInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/main.java" afterDir="false" />
     </list>
     <list id="c971ad0b-86e6-40eb-897e-02795b98aa47" name="added to-do list" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,11 +25,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interface/VisualInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
+            <state relative-caret-position="901">
               <caret line="57" column="55" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Graphics/Compass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -49,6 +58,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -59,6 +75,7 @@
         <option value="$PROJECT_DIR$/ToDo" />
         <option value="$PROJECT_DIR$/src/Interface/main.java" />
         <option value="$PROJECT_DIR$/src/Interface/VisualInterface.java" />
+        <option value="$PROJECT_DIR$/src/Graphics/Compass.java" />
       </list>
     </option>
   </component>
@@ -89,6 +106,12 @@
               <item name="MATE_SiliconSharks_2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="MATE_SiliconSharks_2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Graphics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MATE_SiliconSharks_2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MATE_SiliconSharks_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Interface" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -100,7 +123,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549818193679" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549818498180" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -179,14 +202,21 @@
       <option name="project" value="LOCAL" />
       <updated>1549738183279</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="worked on pilot interface">
+      <created>1549818230665</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1549818230665</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18120806" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18120806" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -196,7 +226,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -256,7 +286,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added to-do list" />
-    <option name="LAST_COMMIT_MESSAGE" value="added to-do list" />
+    <MESSAGE value="worked on pilot interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="worked on pilot interface" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MATE_SiliconSharks_2019.iml">
@@ -280,10 +311,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/sup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interface/VisualInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
+        <state relative-caret-position="901">
           <caret line="57" column="55" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/Compass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
