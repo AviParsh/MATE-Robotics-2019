@@ -14,7 +14,8 @@ public class VisualInterface {
 
         JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame("Visual Interface");
-        JPanel panel = new JPanel();
+        JPanel sliderpanel = new JPanel();
+        JPanel dpadpanel = new JPanel();
         Container c = frame.getContentPane();
 
         JSlider leftSlider = new JSlider(JSlider.VERTICAL, -50, 50, 0);
@@ -46,17 +47,17 @@ public class VisualInterface {
         // Set the label to be drawn
         leftSlider.setLabelTable(position);
         rightSlider.setLabelTable(position);
-        panel.add(leftSlider,BorderLayout.WEST);
-        panel.add(rightSlider,BorderLayout.EAST);
+        sliderpanel.add(leftSlider,BorderLayout.WEST);
+        sliderpanel.add(rightSlider,BorderLayout.EAST);
 
         frame.setLayout(new BorderLayout());
-        panel.setBorder(BorderFactory.createLineBorder(Color.white,3));
-        frame.add(panel,BorderLayout.EAST);
+        sliderpanel.setBorder(BorderFactory.createLineBorder(Color.white,3));
+        frame.add(sliderpanel,BorderLayout.EAST);
         frame.setSize(1500,800);
         frame.setVisible(true);
         leftSlider.setBackground(new Color(44,62,80));
         rightSlider.setBackground(new Color(44,62,80));
-        panel.setBackground(new Color(84, 110, 122));
+        sliderpanel.setBackground(new Color(84, 110, 122));
 
         c.setBackground(new Color(44,62,80));
 
