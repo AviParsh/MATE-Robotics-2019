@@ -7,7 +7,7 @@ import java.awt.*;
 import java.util.Hashtable;
 
 
-public class VisualInterface extends JPanel {
+public class VisualInterface{
     private JInputJoystick joystick = new JInputJoystick(Controller.Type.STICK, Controller.Type.GAMEPAD);
 
     public VisualInterface(){
