@@ -7,15 +7,20 @@ import java.awt.*;
 import java.util.Hashtable;
 
 
-public class VisualInterface {
+public class VisualInterface{
     private JInputJoystick joystick = new JInputJoystick(Controller.Type.STICK, Controller.Type.GAMEPAD);
 
     public VisualInterface(){
 
         JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame("Visual Interface");
-        JPanel sliderpanel = new JPanel();
-        JPanel dpadpanel = new JPanel();
+        JPanel panel = new JPanel();
+
+
+        //VisualInterface linepanel = new VisualInterface();
+
+        //frame.add(linepanel);
+
         Container c = frame.getContentPane();
 
         JSlider leftSlider = new JSlider(JSlider.VERTICAL, -50, 50, 0);
@@ -47,19 +52,20 @@ public class VisualInterface {
         // Set the label to be drawn
         leftSlider.setLabelTable(position);
         rightSlider.setLabelTable(position);
-        sliderpanel.add(leftSlider,BorderLayout.WEST);
-        sliderpanel.add(rightSlider,BorderLayout.EAST);
+        panel.add(leftSlider,BorderLayout.WEST);
+        panel.add(rightSlider,BorderLayout.EAST);
 
         frame.setLayout(new BorderLayout());
-        sliderpanel.setBorder(BorderFactory.createLineBorder(Color.white,3));
-        frame.add(sliderpanel,BorderLayout.EAST);
+        panel.setBorder(BorderFactory.createLineBorder(Color.white,3));
+        frame.add(panel,BorderLayout.EAST);
         frame.setSize(1500,800);
         frame.setVisible(true);
         leftSlider.setBackground(new Color(44,62,80));
         rightSlider.setBackground(new Color(44,62,80));
-        sliderpanel.setBackground(new Color(84, 110, 122));
+        panel.setBackground(new Color(84, 110, 122));
 
         c.setBackground(new Color(44,62,80));
+
 
 
         // Check if the controller was found.
@@ -88,7 +94,21 @@ public class VisualInterface {
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        //vertical line
+        g.setColor(Color.red);
+        g.drawLine(20, 20, 20, 120);
 
+        //horizontal line
+        g.setColor(Color.green);
+        g.drawLine(20, 20, 120, 20);
+
+        //diagonal line
+        g.setColor(Color.blue);
+        g.drawLine(20, 20, 120, 120);
+
+    }
     //following 4 functions are to get joystick pos
     public int getyvalr(){
         if (joystick.getControllerType() == Controller.Type.STICK) {
