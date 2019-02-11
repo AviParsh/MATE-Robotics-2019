@@ -84,7 +84,7 @@ public class VisualInterface{
             hstick = gethpos();
             leftSlider.setValue(yvall);
             rightSlider.setValue(yvalr);
-            System.out.println(hstick);
+            //System.out.println(hstick);
 
             if(hstick==.25){
                 frame.repaint();
