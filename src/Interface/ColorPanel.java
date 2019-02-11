@@ -43,13 +43,13 @@ public class ColorPanel extends JPanel {
             if(hstick==0.25){
                 g2.setColor(Color.green);
                 g2.drawLine(1175,325,1175,575);
-                g2.drawLine(1025,inity1-20,1300,inity2+20); //SeaLevel
+                g2.drawLine(1025,inity1+20,1300,inity2-20); //SeaLevel
                 break;
             }
             else if(hstick==0.75) {
                 g2.setColor(Color.green);
                 g2.drawLine(1175,325,1175,575);
-                g2.drawLine(1025, inity1 + 20, 1300, inity2 - 20); //SeaLevel
+                g2.drawLine(1025, inity1 - 20, 1300, inity2 + 20); //SeaLevel
                 break;
             } else if(hstick==1.0) {
                 g2.setColor(Color.green);
