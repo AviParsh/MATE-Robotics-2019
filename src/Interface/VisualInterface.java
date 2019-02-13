@@ -17,11 +17,12 @@ public class VisualInterface{
         JFrame frame = new JFrame();
         frame.setTitle("Visual Interface");
         frame.setSize(1500, 800);
+        frame.setDefaultLookAndFeelDecorated(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        ColorPanel p = new ColorPanel(Color.WHITE);
+        ColorPanel p = new ColorPanel(Color.WHITE,joystick);
 
-        JButton Button1 = new JButton("Button");
+        JButton Button1 = new JButton("Shut Down");
         JButton Button2 = new JButton("Button");
 
         JSlider leftSlider = new JSlider(JSlider.VERTICAL, -50, 50, 0);
@@ -64,8 +65,8 @@ public class VisualInterface{
         Button1.setLocation(1250, 620);
         Button2.setLocation(100, 100);
 
-        leftSlider.setLocation(1350,0);
-        rightSlider.setLocation(1250,0);
+        rightSlider.setLocation(1350,0);
+        leftSlider.setLocation(1250,0);
 
         Button1.setSize(new Dimension(200, 100));
         Button2.setSize(new Dimension(100, 100));
@@ -77,10 +78,10 @@ public class VisualInterface{
         rightSlider.setBackground(new Color(44,62,80));
         leftSlider.setBorder(BorderFactory.createLineBorder(Color.black,3));
         rightSlider.setBorder(BorderFactory.createLineBorder(Color.black,3));
-        Button1.setBackground(new Color(44,62,80));
+        Button1.setBackground(Color.RED);
         Button1.setBorder(BorderFactory.createLineBorder(Color.black,3));
         Button1.setForeground(Color.white);
-
+        p.setBackground(new Color(84, 110, 122));
 
         p.add(Button1);
         p.add(Button2);
