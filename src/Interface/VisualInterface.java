@@ -58,7 +58,7 @@ public class VisualInterface{
             }
         });
 
-
+        //options
         p.setLayout(null);
 
         Button1.setLocation(1250, 620);
