@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="242af0cf-45ba-4596-a1d4-5258b9dcba4c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/ColorPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/ColorPanel.java" afterDir="false" />
     </list>
     <list id="c971ad0b-86e6-40eb-897e-02795b98aa47" name="added to-do list" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -13,12 +14,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/JInputJoystick.java">
+        <entry file="file://$PROJECT_DIR$/ToDo">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interface/VisualInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Interface/ColorPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Graphics/Compass.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -26,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interface/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding>
                 <element signature="e#83#84#0" expanded="true" />
                 <element signature="e#142#143#0" expanded="true" />
@@ -36,48 +67,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Interface/VisualInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3857#3858#0" expanded="true" />
-                <element signature="e#3917#3918#0" expanded="true" />
-                <element signature="e#3944#3945#0" expanded="true" />
-                <element signature="e#3996#3997#0" expanded="true" />
-                <element signature="e#4069#4070#0" expanded="true" />
-                <element signature="e#4123#4124#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Interface/ColorPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1499#1500#0" expanded="true" />
-                <element signature="e#1553#1554#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ToDo">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>red</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -96,7 +91,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
-    <option name="width" value="1498" />
+    <option name="width" value="1500" />
     <option name="height" value="990" />
   </component>
   <component name="ProjectView">
@@ -126,11 +121,13 @@
               <item name="MATE_SiliconSharks_2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="MATE_SiliconSharks_2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+              <item name="Graphics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MATE_SiliconSharks_2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="MATE_SiliconSharks_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -141,7 +138,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549945837337" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550037106780" />
     <property name="last_opened_file_path" value="D:/polygon" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -259,48 +256,35 @@
       <option name="project" value="LOCAL" />
       <updated>1549841840584</updated>
     </task>
-    <task id="LOCAL-00010" summary="kinda added the dpad input, the line moves when dpad is pressed but resets every time it is unpressed still some kinks to work out.">
-      <created>1549859417999</created>
+    <task id="LOCAL-00010" summary="better GUI code and minor bug fixes">
+      <created>1550021606668</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1549859417999</updated>
+      <updated>1550021606668</updated>
     </task>
-    <task id="LOCAL-00011" summary="added left/right dpad input">
-      <created>1549861837228</created>
+    <task id="LOCAL-00011" summary="better GUI code and minor bug fixes">
+      <created>1550021715032</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1549861837228</updated>
+      <updated>1550021715032</updated>
     </task>
-    <task id="LOCAL-00012" summary="added left/right dpad input">
-      <created>1549861872142</created>
+    <task id="LOCAL-00012" summary="working on smooth side/front view orientation visual">
+      <created>1550037315127</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1549861872142</updated>
+      <updated>1550037315127</updated>
     </task>
-    <task id="LOCAL-00013" summary="added left/right dpad input">
-      <created>1549861932104</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1549861932104</updated>
-    </task>
-    <task id="LOCAL-00014" summary="fixed up/down dpad input">
-      <created>1549891007589</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1549891007589</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18900344" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18926175" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -309,15 +293,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4975945" visible="true" weight="0.16370107" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49395972" visible="true" weight="0.16288953" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49965635" weight="0.39976275" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.2266289" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5024055" side_tool="true" visible="true" weight="0.16370107" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5033557" side_tool="true" weight="0.32719547" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4992636" weight="0.32941177" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49965635" weight="0.32858837" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4966443" weight="0.32719547" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -370,21 +354,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added to-do list" />
-    <MESSAGE value="kinda added the dpad input, the line moves when dpad is pressed but resets every time it is unpressed still some kinks to work out." />
-    <MESSAGE value="added left/right dpad input" />
-    <MESSAGE value="fixed up/down dpad input" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed up/down dpad input" />
+    <MESSAGE value="better GUI code and minor bug fixes" />
+    <MESSAGE value="working on smooth side/front view orientation visual" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on smooth side/front view orientation visual" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MATE_SiliconSharks_2019.iml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToDo">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/main.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -419,24 +395,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/javax/swing/JComponent.java" />
     <entry file="file://$PROJECT_DIR$/src/Controller/JInputJoystick.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="188">
+          <caret line="363" selection-start-line="363" selection-end-line="363" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/javax/swing/JComponent.java">
+    <entry file="file://$PROJECT_DIR$/ToDo">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1151">
-          <caret line="993" column="16" selection-start-line="993" selection-start-column="16" selection-end-line="993" selection-end-column="16" />
+        <state relative-caret-position="170">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/VisualInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/Compass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interface/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
             <element signature="e#83#84#0" expanded="true" />
             <element signature="e#142#143#0" expanded="true" />
@@ -446,28 +437,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interface/ColorPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="305">
+          <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1499#1500#0" expanded="true" />
-            <element signature="e#1553#1554#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interface/VisualInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3857#3858#0" expanded="true" />
-            <element signature="e#3917#3918#0" expanded="true" />
-            <element signature="e#3944#3945#0" expanded="true" />
-            <element signature="e#3996#3997#0" expanded="true" />
-            <element signature="e#4069#4070#0" expanded="true" />
-            <element signature="e#4123#4124#0" expanded="true" />
           </folding>
         </state>
       </provider>
