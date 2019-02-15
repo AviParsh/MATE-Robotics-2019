@@ -68,7 +68,7 @@ public class ColorPanel extends JPanel {
                 break;
             }
         }
-
+//sup
     }
     public float gethpos(){
         return joystick.getHatSwitchPosition();
