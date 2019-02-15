@@ -14,53 +14,56 @@ public class VisualInterface{
 
         JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame("Visual Interface");
-        JPanel panel = new JPanel();
+
+        SliderPanel sliders = new SliderPanel();
+//        JPanel panel = new JPanel();
+
         ColorPanel linepanel = new ColorPanel(Color.WHITE);
-        Container c = frame.getContentPane();
+        Container framePane = frame.getContentPane();
 
-        JSlider leftSlider = new JSlider(JSlider.VERTICAL, -50, 50, 0);
-        Dimension dl = leftSlider.getPreferredSize();
-        leftSlider.setPreferredSize(new Dimension(dl.width+50,dl.height+550));
-        leftSlider.setBounds(0,0,100,200);
-
-        JSlider rightSlider = new JSlider(JSlider.VERTICAL, -50, 50, 0);
-        Dimension dr = rightSlider.getPreferredSize();
-        rightSlider.setPreferredSize(new Dimension(dr.width+50,dr.height+550));
-        rightSlider.setBounds(0,0,100,200);
-
-        leftSlider.setPaintLabels(true);
-        rightSlider.setPaintLabels(true);
-
-        // Add positions label in the slider
-        Hashtable position = new Hashtable();
-        JLabel l1 = new JLabel("-50");
-        JLabel l2 = new JLabel("0");
-        JLabel l3 = new JLabel("50");
-        l1.setForeground(Color.white);
-        l2.setForeground(Color.white);
-        l3.setForeground(Color.white);
-
-        position.put(-50, l1);
-        position.put(0, l2);
-        position.put(50, l3);
-
-        // Set the label to be drawn
-        leftSlider.setLabelTable(position);
-        rightSlider.setLabelTable(position);
-        panel.add(leftSlider,BorderLayout.WEST);
-        panel.add(rightSlider,BorderLayout.EAST);
+//         = new JSlider(JSlider.VERTICAL, -50, 50, 0);
+//        Dimension dl = leftSlider.getPreferredSize();
+//        leftSlider.setPreferredSize(new Dimension(dl.width+50,dl.height+550));
+//        leftSlider.setBounds(0,0,100,200);
+//
+//        JSlider rightSlider = new JSlider(JSlider.VERTICAL, -50, 50, 0);
+//        Dimension dr = rightSlider.getPreferredSize();
+//        rightSlider.setPreferredSize(new Dimension(dr.width+50,dr.height+550));
+//        rightSlider.setBounds(0,0,100,200);
+//
+//        leftSlider.setPaintLabels(true);
+//        rightSlider.setPaintLabels(true);
+//
+//        // Add positions label in the slider
+//        Hashtable position = new Hashtable();
+//        JLabel l1 = new JLabel("-50");
+//        JLabel l2 = new JLabel("0");
+//        JLabel l3 = new JLabel("50");
+//        l1.setForeground(Color.white);
+//        l2.setForeground(Color.white);
+//        l3.setForeground(Color.white);
+//
+//        position.put(-50, l1);
+//        position.put(0, l2);
+//        position.put(50, l3);
+//
+//        // Set the label to be drawn
+//        leftSlider.setLabelTable(position);
+//        rightSlider.setLabelTable(position);
+//        panel.add(leftSlider,BorderLayout.WEST);
+//        panel.add(rightSlider,BorderLayout.EAST);
 
         frame.setLayout(new BorderLayout());
-        panel.setBorder(BorderFactory.createLineBorder(Color.white,3));
-        frame.add(panel,BorderLayout.EAST);
+//      panel.setBorder(BorderFactory.createLineBorder(Color.white,3));
+        frame.add(sliders,BorderLayout.EAST);
         frame.add(linepanel);
         frame.setSize(1500,800);
         frame.setVisible(true);
-        leftSlider.setBackground(new Color(44,62,80));
-        rightSlider.setBackground(new Color(44,62,80));
-        panel.setBackground(new Color(84, 110, 122));
+//        leftSlider.setBackground(new Color(44,62,80));
+//        rightSlider.setBackground(new Color(44,62,80));
+//        panel.setBackground(new Color(84, 110, 122));
 
-        c.setBackground(new Color(44,62,80));
+        framePane.setBackground(new Color(44,62,80));
 
 
 
@@ -82,9 +85,9 @@ public class VisualInterface{
             yvall = getyvall();
             yvalr = getyvalr();
             hstick = gethpos();
-            leftSlider.setValue(yvall);
-            rightSlider.setValue(yvalr);
-            //System.out.println(hstick);
+            //leftSlider.setValue(yvall);
+            //rightSlider.setValue(yvalr);
+            System.out.println(hstick);
 
             if(hstick==.25){
                 frame.repaint();

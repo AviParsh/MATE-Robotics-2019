@@ -2,7 +2,7 @@ package Interface;
 
 import Controller.JInputJoystick;
 import net.java.games.input.Controller;
-import java.util.Hashtable;
+//import java.util.Hashtable;
 import javax.swing.*;
 import java.awt.*;
 
