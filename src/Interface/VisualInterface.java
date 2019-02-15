@@ -4,6 +4,9 @@ import net.java.games.input.Controller;
 import Controller.JInputJoystick;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
 import java.util.Hashtable;
 
 
@@ -12,21 +15,19 @@ public class VisualInterface{
 
     public VisualInterface(){
 
-        JFrame.setDefaultLookAndFeelDecorated(true);
-        JFrame frame = new JFrame("Visual Interface");
-        JPanel panel = new JPanel();
-        ColorPanel linepanel = new ColorPanel(Color.WHITE);
-        Container c = frame.getContentPane();
+        JFrame frame = new JFrame();
+        frame.setTitle("Visual Interface");
+        frame.setSize(1500, 800);
+        frame.setDefaultLookAndFeelDecorated(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        ColorPanel p = new ColorPanel(Color.WHITE,joystick);
+
+        JButton Button1 = new JButton("Shut Down");
+        JButton Button2 = new JButton("Button");
 
         JSlider leftSlider = new JSlider(JSlider.VERTICAL, -50, 50, 0);
-        Dimension dl = leftSlider.getPreferredSize();
-        leftSlider.setPreferredSize(new Dimension(dl.width+50,dl.height+550));
-        leftSlider.setBounds(0,0,100,200);
-
         JSlider rightSlider = new JSlider(JSlider.VERTICAL, -50, 50, 0);
-        Dimension dr = rightSlider.getPreferredSize();
-        rightSlider.setPreferredSize(new Dimension(dr.width+50,dr.height+550));
-        rightSlider.setBounds(0,0,100,200);
 
         leftSlider.setPaintLabels(true);
         rightSlider.setPaintLabels(true);
@@ -47,20 +48,50 @@ public class VisualInterface{
         // Set the label to be drawn
         leftSlider.setLabelTable(position);
         rightSlider.setLabelTable(position);
-        panel.add(leftSlider,BorderLayout.WEST);
-        panel.add(rightSlider,BorderLayout.EAST);
 
-        frame.setLayout(new BorderLayout());
-        panel.setBorder(BorderFactory.createLineBorder(Color.white,3));
-        frame.add(panel,BorderLayout.EAST);
-        frame.add(linepanel);
-        frame.setSize(1500,800);
-        frame.setVisible(true);
+        Button1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
+            }
+        });
+        Button2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+        //options
+        p.setLayout(null);
+
+        Button1.setLocation(1250, 620);
+        Button2.setLocation(100, 100);
+
+        rightSlider.setLocation(1350,0);
+        leftSlider.setLocation(1250,0);
+
+        Button1.setSize(new Dimension(200, 100));
+        Button2.setSize(new Dimension(100, 100));
+
+        leftSlider.setSize(new Dimension(100,600));
+        rightSlider.setSize(new Dimension(100,600));
+
         leftSlider.setBackground(new Color(44,62,80));
         rightSlider.setBackground(new Color(44,62,80));
-        panel.setBackground(new Color(84, 110, 122));
+        leftSlider.setBorder(BorderFactory.createLineBorder(Color.black,3));
+        rightSlider.setBorder(BorderFactory.createLineBorder(Color.black,3));
+        Button1.setBackground(Color.RED);
+        Button1.setBorder(BorderFactory.createLineBorder(Color.black,3));
+        Button1.setForeground(Color.white);
+        p.setBackground(new Color(84, 110, 122));
 
-        c.setBackground(new Color(44,62,80));
+        p.add(Button1);
+        p.add(Button2);
+        p.add(leftSlider);
+        p.add(rightSlider);
+
+        frame.add(p);
+        frame.revalidate();
+        frame.setVisible(true);
 
 
 
