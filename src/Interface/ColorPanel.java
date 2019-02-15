@@ -8,15 +8,10 @@ import java.awt.*;
 
 public class ColorPanel extends JPanel {
     private JInputJoystick joystick;
-    double slope = 0;
-    double x1S = 1070; //Side view variables
-    double x2S = 1195;
-    double y1S = 150;
-    double y2S = 0;
-    double x1F = 1070; //Front view variables
-    double x2F = 1195;
-    double y1F = 450;
-    double y2F = 0;
+    int inity1=150;
+    int inity2=150;
+    int initx1=1070;
+    int initx2=1070;
 
     public ColorPanel(Color backcolor, JInputJoystick j) {
         setBackground(backcolor);
@@ -46,54 +41,44 @@ public class ColorPanel extends JPanel {
 
         float hstick = 0;
         int i = 1;
-        while(i==1) {
+        while(i==1){
             hstick = gethpos();
-            g2.setColor(Color.green);
-            if(hstick!=0) {
-                if (hstick == 0.25) {           //up
-                    slope = slope - 0.05;
-                    if (slope <= -1) {
-                        slope = -1;
-                    }
-                    y2S = slope * (x2S - x1S) + y1S;
-                    g2.drawLine((int) x1S, (int) y1S, (int) x2S, (int) y2S); //side view line
-                    break;
-                } else if (hstick == 0.75) {    //down
-                    slope = slope + 0.05;
-                    System.out.println(slope);
-                    if (slope >= 1) {
-                        slope = 1;
-                    }
-                    y2S = slope * (x2S - x1S) + y1S;
-                    g2.drawLine((int) x1S, (int) y1S, (int) x2S, (int) y2S); //side view line
-                    break;
-                }
-                if (hstick == 1.0) {            //left
-                    slope = slope + 0.05;
-                    if (slope >= 1) {
-                        slope = 1;
-                    }
-                    y2F = slope * (x2F - x1F) + y1F;
-                    g2.drawLine((int) x1F, (int) y1F, (int) x2F, (int) y2F); //front view line
-                    break;
-                } else if (hstick == 0.5) {     //right
-                    slope = slope - 0.05;
-                    if (slope <= -1) {
-                        slope = -1;
-                    }
-                    y2F = slope * (x2F - x1F) + y1F;
-                    g2.drawLine((int) x1F, (int) y1F, (int) x2F, (int) y2F); //front view line
-                    break;
-                }
+            //System.out.println(hstick);
+
+            if(hstick==0.25){
+                g2.setColor(Color.green);
+                inity1+=1;
+                inity2-=1;
+                g2.drawLine(initx1,325,initx2,575);
+                g2.drawLine(945,inity1,1195,inity2); //SeaLevel
+                break;
+            }
+            else if(hstick==0.75) {
+                g2.setColor(Color.green);
+                inity1-=1;
+                inity2+=1;
+                g2.drawLine(initx1,325,initx2,575);
+                g2.drawLine(945, inity1, 1195, inity2); //SeaLevel
+                break;
+            } else if(hstick==1.0) {
+                g2.setColor(Color.green);
+                initx1-=1;
+                initx2+=1;
+                g2.drawLine(945, inity1, 1195, inity2);
+                g2.drawLine(initx1,325,initx2,575);
+                break;
+            } else if(hstick==0.5) {
+                g2.setColor(Color.green);
+                initx1+=1;
+                initx2-=1;
+                g2.drawLine(945, inity1, 1195, inity2);
+                g2.drawLine(initx1,325,initx2,575);
+                break;
             } else {
-                if(slope == 0){
-                    g2.drawLine((int) x1S, (int) y1S, (int) x2S, (int) y1S); //side view line
-                    g2.drawLine((int) x1F, (int) y1F, (int) x2F, (int) y1F); //front view line
-                }else {
-                    g2.drawLine((int) x1S, (int) y1S, (int) x2S, (int) y2S); //side view line
-                    g2.drawLine((int) x1F, (int) y1F, (int) x2F, (int) y2F); //front view line
-                    break;
-                }
+                g2.setColor(Color.green);
+                g2.drawLine(945, inity1, 1195, inity2); //SeaLevel
+                g2.drawLine(initx1,325,initx2,575);
+                break;
             }
         }
 
