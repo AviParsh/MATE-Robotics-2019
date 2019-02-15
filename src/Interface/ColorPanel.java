@@ -47,16 +47,16 @@ public class ColorPanel extends JPanel {
 
             if(hstick==0.25){
                 g2.setColor(Color.green);
-                inity1+=1;
-                inity2-=1;
+                inity1-=1;
+                inity2+=1;
                 g2.drawLine(initx1,325,initx2,575);
                 g2.drawLine(945,inity1,1195,inity2); //SeaLevel
                 break;
             }
             else if(hstick==0.75) {
                 g2.setColor(Color.green);
-                inity1-=1;
-                inity2+=1;
+                inity1+=1;
+                inity2-=1;
                 g2.drawLine(initx1,325,initx2,575);
                 g2.drawLine(945, inity1, 1195, inity2); //SeaLevel
                 break;
@@ -81,7 +81,7 @@ public class ColorPanel extends JPanel {
                 break;
             }
         }
-        //sup
+
 
     }
     public float gethpos(){
