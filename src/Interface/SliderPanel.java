@@ -20,18 +20,26 @@ public class SliderPanel extends JPanel{
         addSliderLabels(leftSlider);
         addSliderLabels(rightSlider);
 
-        leftSlider.setBackground(new Color(44,62,80));
-        rightSlider.setBackground(new Color(44,62,80));
-
         this.add(leftSlider, BorderLayout.WEST);
         this.add(rightSlider, BorderLayout.EAST);
     }
 
+    public JSlider getRightSlider(){
+        return rightSlider;
+    }
+
+    public JSlider getLeftSlider(){
+        return leftSlider;
+    }
+
     private void prepareSlider(JSlider slider){
         Dimension dimension = slider.getPreferredSize();
-        slider.setPreferredSize(new Dimension(dimension.width+50,dimension.height+550));
+        slider.setSize(new Dimension(dimension.width+50,dimension.height+550));
         slider.setBounds(0,0,100,200);
         slider.setPaintLabels(true);
+        slider.setBackground(new Color(44,62,80));
+        slider.setBorder(BorderFactory.createLineBorder(Color.black,3));
+
     }
 
     private void addSliderLabels(JSlider slider){

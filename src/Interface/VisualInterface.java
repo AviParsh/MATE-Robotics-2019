@@ -7,7 +7,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
-import java.util.Hashtable;
 
 
 public class VisualInterface{
@@ -26,28 +25,7 @@ public class VisualInterface{
         JButton Button1 = new JButton("Shut Down");
         JButton Button2 = new JButton("Button");
 
-        JSlider leftSlider = new JSlider(JSlider.VERTICAL, -50, 50, 0);
-        JSlider rightSlider = new JSlider(JSlider.VERTICAL, -50, 50, 0);
-
-        leftSlider.setPaintLabels(true);
-        rightSlider.setPaintLabels(true);
-
-        // Add positions label in the slider
-        Hashtable position = new Hashtable();
-        JLabel l1 = new JLabel("-50");
-        JLabel l2 = new JLabel("0");
-        JLabel l3 = new JLabel("50");
-        l1.setForeground(Color.white);
-        l2.setForeground(Color.white);
-        l3.setForeground(Color.white);
-
-        position.put(-50, l1);
-        position.put(0, l2);
-        position.put(50, l3);
-
-        // Set the label to be drawn
-        leftSlider.setLabelTable(position);
-        rightSlider.setLabelTable(position);
+        SliderPanel sliders = new SliderPanel();
 
         Button1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -66,19 +44,19 @@ public class VisualInterface{
         Button1.setLocation(1250, 620);
         Button2.setLocation(100, 100);
 
-        rightSlider.setLocation(1350,0);
-        leftSlider.setLocation(1250,0);
+//        rightSlider.setLocation(1350,0);
+//        leftSlider.setLocation(1250,0);
 
         Button1.setSize(new Dimension(200, 100));
         Button2.setSize(new Dimension(100, 100));
 
-        leftSlider.setSize(new Dimension(100,600));
-        rightSlider.setSize(new Dimension(100,600));
+//        leftSlider.setSize(new Dimension(100,600));
+//        rightSlider.setSize(new Dimension(100,600));
 
-        leftSlider.setBackground(new Color(44,62,80));
-        rightSlider.setBackground(new Color(44,62,80));
-        leftSlider.setBorder(BorderFactory.createLineBorder(Color.black,3));
-        rightSlider.setBorder(BorderFactory.createLineBorder(Color.black,3));
+//        leftSlider.setBackground(new Color(44,62,80));
+//        rightSlider.setBackground(new Color(44,62,80));
+//        leftSlider.setBorder(BorderFactory.createLineBorder(Color.black,3));
+//        rightSlider.setBorder(BorderFactory.createLineBorder(Color.black,3));
         Button1.setBackground(Color.RED);
         Button1.setBorder(BorderFactory.createLineBorder(Color.black,3));
         Button1.setForeground(Color.white);
@@ -86,8 +64,7 @@ public class VisualInterface{
 
         p.add(Button1);
         p.add(Button2);
-        p.add(leftSlider);
-        p.add(rightSlider);
+        p.add(sliders, BorderLayout.EAST);
 
         frame.add(p);
         frame.revalidate();
@@ -113,8 +90,8 @@ public class VisualInterface{
             yvall = getyvall();
             yvalr = getyvalr();
             hstick = gethpos();
-            leftSlider.setValue(yvall);
-            rightSlider.setValue(yvalr);
+            sliders.getLeftSlider().setValue(yvall);
+            sliders.getRightSlider().setValue(yvalr);
             //System.out.println(hstick);
 
             if(hstick==.25){
