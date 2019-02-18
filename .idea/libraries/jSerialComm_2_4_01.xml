@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="jutils-1.0.0">
+  <library name="jSerialComm-2.4.01">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/jutils-1.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jSerialComm-2.4.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -8,14 +8,18 @@ import java.awt.*;
 
 public class ColorPanel extends JPanel {
     private JInputJoystick joystick;
-    int inity1=150;
-    int inity2=150;
-    int initx1=1070;
-    int initx2=1070;
+    private Line Hor;
+    private Line l2;
+
+
 
     public ColorPanel(Color backcolor, JInputJoystick j) {
         setBackground(backcolor);
         joystick = j;
+        Hor = new Line(920,150,1220,150);
+        l2 = new Line(920,200,1220,200);
+
+
         repaint();
     }
     public void paintComponent(Graphics g) {
@@ -47,40 +51,35 @@ public class ColorPanel extends JPanel {
 
             if(hstick==0.25){
                 g2.setColor(Color.green);
-                inity1-=1;
-                inity2+=1;
-                g2.drawLine(initx1,325,initx2,575);
-                g2.drawLine(945,inity1,1195,inity2); //SeaLevel
+
                 break;
             }
             else if(hstick==0.75) {
                 g2.setColor(Color.green);
-                inity1+=1;
-                inity2-=1;
-                g2.drawLine(initx1,325,initx2,575);
-                g2.drawLine(945, inity1, 1195, inity2); //SeaLevel
+
                 break;
-            } else if(hstick==1.0) {
+            } else if(hstick==1.0) { //left
                 g2.setColor(Color.green);
-                initx1-=1;
-                initx2+=1;
-                g2.drawLine(945, inity1, 1195, inity2);
-                g2.drawLine(initx1,325,initx2,575);
+                Hor.draw(g2);
+                Hor.rotate("cc");
+
                 break;
-            } else if(hstick==0.5) {
+            } else if(hstick==0.5) { //right
                 g2.setColor(Color.green);
-                initx1+=1;
-                initx2-=1;
-                g2.drawLine(945, inity1, 1195, inity2);
-                g2.drawLine(initx1,325,initx2,575);
+                Hor.draw(g2);
+                Hor.rotate("c");
+
                 break;
             } else {
                 g2.setColor(Color.green);
-                g2.drawLine(945, inity1, 1195, inity2); //SeaLevel
-                g2.drawLine(initx1,325,initx2,575);
+
                 break;
             }
+
         }
+        Hor.draw(g2);
+        l2.rotateto(30);
+        l2.draw(g2);
 
 
     }

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
-       // VisualInterface gui = new VisualInterface();
+        VisualInterface gui = new VisualInterface();
 
         SerialPort[] ports = SerialPort.getCommPorts();
         System.out.println("Select a port: ");
