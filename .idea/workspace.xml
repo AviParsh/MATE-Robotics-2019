@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="242af0cf-45ba-4596-a1d4-5258b9dcba4c" name="Default Changelist" comment="added sliderpanel to main panel">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jSerialComm_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jinput_platform_2_0_7_natives_windows.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="242af0cf-45ba-4596-a1d4-5258b9dcba4c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Serial/Serial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MATE_SiliconSharks_2019.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MATE_SiliconSharks_2019.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Controller/JInputJoystick.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Controller/JInputJoystick.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Graphics/Compass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Graphics/Compass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/ColorPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/ColorPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/VisualInterface$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/VisualInterface$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/VisualInterface$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/VisualInterface$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/VisualInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/VisualInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/main.java" afterDir="false" />
     </list>
@@ -38,10 +29,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Interface/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+            <state relative-caret-position="255">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Serial/Serial.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1359#1360#0" expanded="true" />
+                <element signature="e#1418#1419#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interface/VisualInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-612">
+            <state relative-caret-position="510">
               <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -119,21 +124,22 @@
         <option value="$PROJECT_DIR$/src/Interface/SliderPanel.java" />
         <option value="$PROJECT_DIR$/src/Interface/VisualInterface.java" />
         <option value="$PROJECT_DIR$/src/Interface/main.java" />
+        <option value="$PROJECT_DIR$/src/Serial/Serial.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="152" />
+    <option name="x" value="151" />
     <option name="y" value="70" />
-    <option name="width" value="1223" />
-    <option name="height" value="729" />
+    <option name="width" value="1224" />
+    <option name="height" value="730" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,11 +172,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550445669547" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550450388952" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/Serial Libraries/jSerialComm-2.4.0.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -323,14 +329,21 @@
       <option name="project" value="LOCAL" />
       <updated>1550444203524</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="established serial connection (input from imu to java console)">
+      <created>1550446758095</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1550446758095</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14496644" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14697987" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -404,7 +417,8 @@
     <MESSAGE value="working on smooth side/front view orientation visual" />
     <MESSAGE value="added SliderPanel for the 2 sliders" />
     <MESSAGE value="added sliderpanel to main panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="added sliderpanel to main panel" />
+    <MESSAGE value="established serial connection (input from imu to java console)" />
+    <option name="LAST_COMMIT_MESSAGE" value="established serial connection (input from imu to java console)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MATE_SiliconSharks_2019.iml">
@@ -470,6 +484,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/VisualInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interface/SliderPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -487,20 +511,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interface/VisualInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/Serial/Serial.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="216">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1359#1360#0" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interface/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        <state relative-caret-position="255">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
