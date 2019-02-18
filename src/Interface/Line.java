@@ -105,15 +105,25 @@ public class Line {
         a = Math.toRadians(a);
 
         double midx = (x1+x2)/2;
-        double midy=(y1+y2)/2;
+        double midy = (y1+y2)/2;
+        double xdiff = x2-midx;
+        double ydiff = y2-midy;
 
+        if(a>=0&&a<Math.PI/2) {
+            double x2change = (Math.cos(a) * r) - xdiff;
+            x2 += x2change;
 
-        double xdiff= r*Math.cos(a);
-        double ydiff = r*Math.sin(a);
-         x2 =  x2+xdiff;
-         y2 = y2+ydiff;
-         x1 = x1-xdiff;
-         y1 = y1-ydiff;
+            double y2change = (Math.sin(a) * r) - ydiff;
+            y2 += y2change;
+
+            double x1change = -x2change;
+
+            x1 += x1change;
+
+            double y1change = -y2change;
+
+            y1 += y1change;
+        }
 
 
     }

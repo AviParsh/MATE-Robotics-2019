@@ -78,7 +78,7 @@ public class ColorPanel extends JPanel {
 
         }
         Hor.draw(g2);
-        l2.rotateto(30);
+        l2.rotateto(70);
         l2.draw(g2);
 
 
