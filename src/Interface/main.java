@@ -7,13 +7,16 @@ import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
-       VisualInterface gui = new VisualInterface();
+       // VisualInterface gui = new VisualInterface();
+        GUIWindow gui = new GUIWindow();
 
-       Serial s = new Serial(1);
-       int t = 1;
-       while(t==1) {
-           System.out.println(s.getPitcb());
-       }
+       System.out.println("cool");
+//
+//       Serial s = new Serial(1);
+//       int t = 1;
+//       while(t==1) {
+//           System.out.println(s.getPitcb());
+//       }
     }
 
 }
