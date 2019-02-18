@@ -113,8 +113,8 @@ public class Line {
             double x2change = (Math.cos(a) * r) - xdiff;
             x2 += x2change;
 
-            double y2change = (Math.sin(a) * r) - ydiff;
-            y2 += y2change;
+            double y2change = (Math.sin(a) * r) - ydiff; //will be positive
+            y2 -= y2change;
 
             double x1change = -x2change;
 

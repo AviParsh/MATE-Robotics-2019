@@ -44,6 +44,7 @@ public class ColorPanel extends JPanel {
         g2.setColor(Color.green);
 
         float hstick = 0;
+
         int i = 1;
         while(i==1){
             hstick = gethpos();
