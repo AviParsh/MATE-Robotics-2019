@@ -1,6 +1,7 @@
-package Interface;
+package Interface.Panels;
 
 import Controller.JInputJoystick;
+import Interface.Line;
 import net.java.games.input.Controller;
 import java.util.Hashtable;
 import javax.swing.*;

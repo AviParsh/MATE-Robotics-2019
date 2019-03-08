@@ -1,5 +1,10 @@
 package Interface;
 
+import Interface.Panels.CameraPanel;
+import Interface.Panels.GraphPanel;
+import Interface.Panels.SliderPanel;
+import Interface.Panels.ViewPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -59,6 +64,7 @@ public class GUIWindow extends JFrame {
         middlePanel.add(rightPanel);
 
         Container pane = this.getContentPane();
+        pane.setLayout(new GridLayout(3, 1));
 
         pane.add(topPanel, BorderLayout.NORTH);
         pane.add(middlePanel, BorderLayout.CENTER);

@@ -1,5 +1,7 @@
 package Interface;
 
+import Interface.Panels.ColorPanel;
+import Interface.Panels.SliderPanel;
 import net.java.games.input.Controller;
 import Controller.JInputJoystick;
 import javax.swing.*;
