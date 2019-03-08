@@ -4,6 +4,8 @@ import Interface.Panels.CameraPanel;
 import Interface.Panels.GraphPanel;
 import Interface.Panels.SliderPanel;
 import Interface.Panels.ViewPanel;
+import Interface.Panels.LabelPanel;
+import Interface.Panels.ButtonPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -62,6 +64,12 @@ public class GUIWindow extends JFrame {
 
         middlePanel.add(camera);
         middlePanel.add(rightPanel);
+
+        LabelPanel label = new LabelPanel();
+        ButtonPanel buttons = new ButtonPanel();
+
+        bottomPanel.add(label);
+        bottomPanel.add(buttons);
 
         Container pane = this.getContentPane();
         pane.setLayout(new GridLayout(3, 1));
