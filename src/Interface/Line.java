@@ -43,11 +43,32 @@ public class Line {
         double xdiff = x2-midx;
         double ydiff = -(y2-midy);
         a = Math.atan(ydiff/xdiff);
+
+        if(a>=Math.PI/2&&a<=Math.PI){
+            a+=Math.PI/2;
+            System.out.println("second quad");
+
+
+        }else if(a>=Math.PI&&a<=(3*Math.PI)/2){
+
+            a+=Math.PI/2;
+            System.out.println("Third Quad");
+
+        }else if(a>=(3*Math.PI/2)&&a<=(2*Math.PI)){
+            System.out.println("fourth");
+
+            a+=Math.PI/2;
+        }else if(a>(2*Math.PI)){
+            a = 0;
+        }
         double deg = Math.toDegrees(a);
         System.out.println(deg);
+
+
+
         return a;
     }
-    public void rotateto(double a){
+    public void rotateto(double a){ //accepts degrees
         a = Math.toRadians(a);
         double midx = (x1+x2)/2;
         double midy = (y1+y2)/2;
