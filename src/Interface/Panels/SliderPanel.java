@@ -1,4 +1,4 @@
-package Interface;
+package Interface.Panels;
 
 import javax.swing.*;
 import javax.swing.JSlider;
