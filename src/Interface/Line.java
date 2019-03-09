@@ -36,18 +36,33 @@ public class Line {
     public void draw(Graphics2D g){
         g.draw(new Line2D.Double(x1,y1,x2,y2));
     }
-    public double getangle(){
+    public double getangle() {
         double a;
-        double midx = (x1+x2)/2;
-        double midy = (y1+y2)/2;
-        double xdiff = x2-midx;
-        double ydiff = -(y2-midy);
-        a = Math.atan(ydiff/xdiff);
-        double deg = Math.toDegrees(a);
+        double midx = (x1 + x2) / 2;
+        double midy = (y1 + y2) / 2;
+        double xdiff = (x2 - midx);
+        double ydiff = -(y2 - midy);
+
+
+
+        a = Math.atan2(ydiff , xdiff);
+
+        if(a<0){
+            a = Math.PI*2+a;
+
+        }
+
+
+
+
+       double deg = Math.toDegrees(a);
         System.out.println(deg);
+
+
+
         return a;
     }
-    public void rotateto(double a){
+    public void rotateto(double a){ //accepts degrees
         a = Math.toRadians(a);
         double midx = (x1+x2)/2;
         double midy = (y1+y2)/2;
