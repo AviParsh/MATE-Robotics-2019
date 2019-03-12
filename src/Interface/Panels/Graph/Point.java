@@ -19,8 +19,8 @@ public class Point {
         return y;
     }
 
-    public void draw (Graphics g){
-        g.drawOval(x, y, 5, 5);
+    public void draw (Graphics g,int height){
+        g.drawOval(x, height-y, 5, 5);
     }
 
 }

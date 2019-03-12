@@ -7,6 +7,7 @@ import Interface.Panels.ViewPanel;
 import Interface.Panels.LabelPanel;
 import Interface.Panels.ButtonPanel;
 
+
 import javax.swing.*;
 import java.awt.*;
 
