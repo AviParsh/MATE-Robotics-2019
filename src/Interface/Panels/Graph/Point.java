@@ -1,7 +1,6 @@
 package Interface.Panels.Graph;
 
 import java.awt.*;
-import javax.swing.*;
 
 public class Point {
     int x;
