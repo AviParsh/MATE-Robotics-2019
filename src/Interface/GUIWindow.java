@@ -1,7 +1,7 @@
 package Interface;
 
 import Interface.Panels.CameraPanel;
-import Interface.Panels.GraphPanel;
+import Interface.Panels.Graph.GraphPanel;
 import Interface.Panels.SliderPanel;
 import Interface.Panels.ViewPanel;
 import Interface.Panels.LabelPanel;

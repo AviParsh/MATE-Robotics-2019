@@ -1,4 +1,4 @@
-package Interface.Panels;
+package Interface.Panels.Graph;
 
 import javax.swing.*;
 import java.awt.*;
