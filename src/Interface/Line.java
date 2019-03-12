@@ -49,7 +49,6 @@ public class Line {
 
         if(a<0){
             a = Math.PI*2+a;
-
         }
 
 
