@@ -85,7 +85,7 @@ public class GUIWindow extends JFrame {
         System.out.println("GUI initialized.");
         this.setVisible(true);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setSize(1000, 700);
+        this.setSize(1400, 800);
     }
 
 }
