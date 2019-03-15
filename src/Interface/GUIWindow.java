@@ -1,11 +1,12 @@
 package Interface;
 
 import Interface.Panels.CameraPanel;
-import Interface.Panels.GraphPanel;
+import Interface.Panels.Graph.GraphPanel;
 import Interface.Panels.SliderPanel;
 import Interface.Panels.ViewPanel;
 import Interface.Panels.LabelPanel;
 import Interface.Panels.ButtonPanel;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -84,7 +85,7 @@ public class GUIWindow extends JFrame {
         System.out.println("GUI initialized.");
         this.setVisible(true);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setSize(1000, 700);
+        this.setSize(1400, 800);
     }
 
 }
