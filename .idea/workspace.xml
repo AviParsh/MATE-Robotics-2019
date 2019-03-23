@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="242af0cf-45ba-4596-a1d4-5258b9dcba4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jutils_1_0_01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/control.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MATE_SiliconSharks_2019.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MATE_SiliconSharks_2019.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Controller/JInputJoystick.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Controller/JInputJoystick.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Graphics/Compass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Graphics/Compass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/GUIWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/GUIWindow.class" afterDir="false" />
@@ -24,9 +19,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/VisualInterface$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/VisualInterface$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/VisualInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/VisualInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/META-INF/MATE_SiliconSharks_2019.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Panels/SliderPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Panels/SliderPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/controller.java" afterDir="false" />
     </list>
     <list id="c971ad0b-86e6-40eb-897e-02795b98aa47" name="added to-do list" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -122,7 +115,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/control.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="122">
@@ -133,6 +126,11 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/controller.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -175,9 +173,9 @@
         <option value="$PROJECT_DIR$/src/Interface/GUIWindow.java" />
         <option value="$PROJECT_DIR$/src/Interface/Panels/Graph/GraphPanel.java" />
         <option value="$PROJECT_DIR$/src/Interface/Panels/SliderPanel.java" />
-        <option value="$PROJECT_DIR$/src/Controller/controller.java" />
         <option value="$PROJECT_DIR$/src/Interface/main.java" />
         <option value="$PROJECT_DIR$/src/Controller/control.java" />
+        <option value="$PROJECT_DIR$/src/Controller/controller.java" />
       </list>
     </option>
   </component>
@@ -224,7 +222,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553312360631" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553312373468" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/drive-download-20190210T184228Z-001/jinput-2.0.9.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -391,14 +389,27 @@
       <option name="project" value="LOCAL" />
       <updated>1550452807842</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="established serial connection (input from imu to java console)">
+      <created>1553312369301</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1553312369301</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added controller class">
+      <created>1553312388722</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1553312388722</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16219932" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16219932" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -407,7 +418,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32977462" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49395972" visible="true" weight="0.33451957" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49395972" visible="true" weight="0.33451957" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49965635" weight="0.39976275" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -501,7 +512,8 @@
     <MESSAGE value="added SliderPanel for the 2 sliders" />
     <MESSAGE value="added sliderpanel to main panel" />
     <MESSAGE value="established serial connection (input from imu to java console)" />
-    <option name="LAST_COMMIT_MESSAGE" value="established serial connection (input from imu to java console)" />
+    <MESSAGE value="Added controller class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added controller class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MATE_SiliconSharks_2019.iml">
@@ -617,17 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding>
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interface/GUIWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -689,6 +690,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/controller.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
