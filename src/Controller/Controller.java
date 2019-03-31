@@ -2,15 +2,15 @@ package Controller;
 
 import net.java.games.input.Controller;
 
-public class control  {
+public class Controller {
     private JInputJoystick joystick;
 
-    public control(){
-        joystick = new JInputJoystick(Controller.Type.STICK, Controller.Type.GAMEPAD);
+    public Controller(){
+        joystick = new JInputJoystick(net.java.games.input.Controller.Type.STICK, net.java.games.input.Controller.Type.GAMEPAD);
     }
 
     public int getyvalr(){
-        if (joystick.getControllerType() == Controller.Type.STICK) {
+        if (joystick.getControllerType() == net.java.games.input.Controller.Type.STICK) {
             return (joystick.getZRotationPercentage()-50)*-1;
         }
         else {
@@ -19,7 +19,7 @@ public class control  {
     }
 
     public int getxvalr(){
-        if (joystick.getControllerType() == Controller.Type.STICK) {
+        if (joystick.getControllerType() == net.java.games.input.Controller.Type.STICK) {
             return joystick.getZAxisPercentage();
         }
         else {
