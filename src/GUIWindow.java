@@ -1,5 +1,6 @@
 
 
+import Controls.Controller;
 import Interface.Panels.CameraPanel;
 import Interface.Panels.Graph.GraphPanel;
 import Interface.Panels.SliderPanel;
@@ -15,9 +16,14 @@ public class GUIWindow extends JFrame {
     private JPanel middlePanel;
     private JPanel bottomPanel;
 
+    private Controller controller;
+
 
     public GUIWindow(){
         intializeWindow();
+
+        controller = new Controller();
+        System.out.println(controller.numButtons());
 
         topPanel = new JPanel();
         middlePanel = new JPanel();

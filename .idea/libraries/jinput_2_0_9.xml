@@ -4,6 +4,8 @@
       <root url="jar://$USER_HOME$/Downloads/drive-download-20190331T174742Z-001/jinput-2.0.9.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/jinput-2.0.9-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
