@@ -8,6 +8,7 @@ public class control  {
     public control(){
         joystick = new JInputJoystick(Controller.Type.STICK, Controller.Type.GAMEPAD);
     }
+
     public int getyvalr(){
         if (joystick.getControllerType() == Controller.Type.STICK) {
             return (joystick.getZRotationPercentage()-50)*-1;
@@ -16,6 +17,7 @@ public class control  {
             return (joystick.getYRotationPercentage()-50)*-1;
         }
     }
+
     public int getxvalr(){
         if (joystick.getControllerType() == Controller.Type.STICK) {
             return joystick.getZAxisPercentage();
@@ -24,15 +26,19 @@ public class control  {
             return joystick.getXRotationPercentage();
         }
     }
+
     public int getyvall(){
         return (joystick.getYAxisPercentage()-50)*-1;
     }
+
     public int getxvall(){
         return joystick.getXAxisPercentage();
     }
+
     public int numButtons() {
         joystick.pollController();
         return joystick.getNumberOfButtons(); }
+
     //following function is to get dpad pos
     public float gethpos(){
         return joystick.getHatSwitchPosition();

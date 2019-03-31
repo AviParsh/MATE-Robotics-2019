@@ -3,20 +3,14 @@
 
 import Interface.Panels.Graph.Data;
 import Interface.Panels.Graph.Serial;
+import Interface.VisualInterface;
 
 public class main {
     public static void main(String[] args) {
-       // VisualInterface gui = new VisualInterface();
+       VisualInterface gui = new VisualInterface();
        // GUIWindow gui = new GUIWindow();
 
         Serial ser = new Serial();
-        Data d = new Data();
-
-        d.updateData(ser.getReading());
-        d.updateData(ser.getReading());
-
-        System.out.println(d.toString());
-
 //
 //       Interface.Panels.Graph.Serial s = new Interface.Panels.Graph.Serial(1);
 //       int t = 1;
