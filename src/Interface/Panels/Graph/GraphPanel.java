@@ -11,7 +11,7 @@ public class GraphPanel extends JPanel {
     //private ArrayList<Point> data;
     private int width, height;
 
-    public GraphPanel(Data d){
+    public GraphPanel(){
         height = GraphConstants.maxY - GraphConstants.minY;
         width = 200;
 
