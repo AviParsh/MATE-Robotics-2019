@@ -13,6 +13,7 @@ public class GUIWindow extends JFrame {
     private JPanel middlePanel;
     private JPanel bottomPanel;
 
+
     public GUIWindow(){
         intializeWindow();
 
