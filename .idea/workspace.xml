@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="242af0cf-45ba-4596-a1d4-5258b9dcba4c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jinput_2_0_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jinput_2_0_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jinput_platform_2_0_7_natives_windows.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jinput_platform_2_0_7_natives_windows.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jutils_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jutils_1_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Serial/Arduino.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/VisualInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/VisualInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/VisualInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/VisualInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/main.class" afterDir="false" />
     </list>
     <list id="c971ad0b-86e6-40eb-897e-02795b98aa47" name="added to-do list" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -80,20 +76,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interface/VisualInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="80">
+              <caret line="101" selection-start-line="101" selection-end-line="102" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4082#4083#0" expanded="true" />
-                <element signature="e#4142#4143#0" expanded="true" />
-                <element signature="e#4169#4170#0" expanded="true" />
-                <element signature="e#4221#4222#0" expanded="true" />
-                <element signature="e#4294#4295#0" expanded="true" />
-                <element signature="e#4348#4349#0" expanded="true" />
+                <element signature="e#3799#3800#0" expanded="true" />
+                <element signature="e#3859#3860#0" expanded="true" />
+                <element signature="e#3886#3887#0" expanded="true" />
+                <element signature="e#3938#3939#0" expanded="true" />
+                <element signature="e#4011#4012#0" expanded="true" />
+                <element signature="e#4065#4066#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Serial/Arduino.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -185,12 +190,6 @@
             </path>
             <path>
               <item name="MATE_SiliconSharks_2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MATE_SiliconSharks_2019" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Interface" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MATE_SiliconSharks_2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -201,7 +200,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554055672643" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554055692348" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/Serial Libraries/jSerialComm-2.4.0.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -368,14 +367,21 @@
       <option name="project" value="LOCAL" />
       <updated>1550452807842</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="slider control on visual interface">
+      <created>1554055707873</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1554055707873</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14899328" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14899328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -384,7 +390,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32871014" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49395972" visible="true" weight="0.33287102" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49395972" visible="true" weight="0.33287102" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49965635" weight="0.39976275" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -478,7 +484,8 @@
     <MESSAGE value="added SliderPanel for the 2 sliders" />
     <MESSAGE value="added sliderpanel to main panel" />
     <MESSAGE value="established serial connection (input from imu to java console)" />
-    <option name="LAST_COMMIT_MESSAGE" value="established serial connection (input from imu to java console)" />
+    <MESSAGE value="slider control on visual interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="slider control on visual interface" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MATE_SiliconSharks_2019.iml">
@@ -662,17 +669,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interface/VisualInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="80">
+          <caret line="101" selection-start-line="101" selection-end-line="102" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4082#4083#0" expanded="true" />
-            <element signature="e#4142#4143#0" expanded="true" />
-            <element signature="e#4169#4170#0" expanded="true" />
-            <element signature="e#4221#4222#0" expanded="true" />
-            <element signature="e#4294#4295#0" expanded="true" />
-            <element signature="e#4348#4349#0" expanded="true" />
+            <element signature="e#3799#3800#0" expanded="true" />
+            <element signature="e#3859#3860#0" expanded="true" />
+            <element signature="e#3886#3887#0" expanded="true" />
+            <element signature="e#3938#3939#0" expanded="true" />
+            <element signature="e#4011#4012#0" expanded="true" />
+            <element signature="e#4065#4066#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Serial/Arduino.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
