@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
-       // VisualInterface gui = new VisualInterface();
+        //VisualInterface gui = new VisualInterface();
         GUIWindow gui = new GUIWindow();
 
        System.out.println("cool");

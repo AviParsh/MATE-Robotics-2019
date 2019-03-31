@@ -1,8 +1,9 @@
 package Interface;
 
+/*
 import Interface.Panels.ColorPanel;
 import Interface.Panels.SliderPanel;
-import net.java.games.input.Controller;
+//import net.java.games.input.Controller;
 import Controller.JInputJoystick;
 import javax.swing.*;
 import java.awt.*;
@@ -12,7 +13,7 @@ import java.awt.event.WindowEvent;
 
 
 public class VisualInterface{
-    private JInputJoystick joystick = new JInputJoystick(Controller.Type.STICK, Controller.Type.GAMEPAD);
+   // private JInputJoystick joystick = new JInputJoystick(Controller.Type.STICK, Controller.Type.GAMEPAD);
 
     public VisualInterface(){
 
@@ -143,3 +144,5 @@ public class VisualInterface{
         return joystick.getHatSwitchPosition();
     }
 }
+
+*/
