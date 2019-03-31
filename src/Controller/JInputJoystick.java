@@ -1,3 +1,5 @@
+
+
 package Controller;
 
 import java.util.ArrayList;
@@ -512,3 +514,5 @@ public class JInputJoystick {
         return yValueRightJoystickPercentage;
     }
 }
+
+

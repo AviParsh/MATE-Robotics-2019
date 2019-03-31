@@ -1,5 +1,6 @@
 package Interface;
 
+
 import Interface.Panels.ColorPanel;
 import Interface.Panels.SliderPanel;
 import net.java.games.input.Controller;
@@ -143,3 +144,4 @@ public class VisualInterface{
         return joystick.getHatSwitchPosition();
     }
 }
+

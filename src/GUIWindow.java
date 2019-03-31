@@ -1,3 +1,5 @@
+
+
 import Interface.Panels.CameraPanel;
 import Interface.Panels.Graph.GraphPanel;
 import Interface.Panels.SliderPanel;
@@ -33,7 +35,7 @@ public class GUIWindow extends JFrame {
         GraphPanel graph6 = new GraphPanel();
         GraphPanel graph7 = new GraphPanel();
 
-        CameraPanel camera = new CameraPanel();
+     //   CameraPanel camera = new CameraPanel();
 
         JPanel rightPanel = new JPanel(new GridLayout(1, 2));
         ViewPanel views = new ViewPanel();
@@ -58,9 +60,9 @@ public class GUIWindow extends JFrame {
         topPanel.add(graph6);
         topPanel.add(graph7);
 
-        camera.setBackground(Color.cyan);
+//        camera.setBackground(Color.cyan);
 
-        middlePanel.add(camera);
+       // middlePanel.add(camera);
         middlePanel.add(rightPanel);
 
         LabelPanel label = new LabelPanel();
