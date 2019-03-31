@@ -1,6 +1,4 @@
-package Controller;
-
-import net.java.games.input.Controller;
+package Controls;
 
 public class Controller {
     private JInputJoystick joystick;

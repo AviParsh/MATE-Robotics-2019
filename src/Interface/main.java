@@ -1,5 +1,5 @@
 package Interface;
-import Controller.Controller;
+import Controls.Controller;
 
 //import Serial.Serial;
 //import com.fazecast.jSerialComm.SerialPort;

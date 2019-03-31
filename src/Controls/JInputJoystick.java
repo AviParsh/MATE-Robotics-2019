@@ -1,6 +1,6 @@
 
 
-package Controller;
+package Controls;
 
 import java.util.ArrayList;
 import net.java.games.input.Component;
@@ -12,7 +12,7 @@ public class JInputJoystick {
 
     private Controller controller;
 
-    // Controller buttons states
+    // Controls buttons states
     private ArrayList<Boolean> buttonsValues;
 
 
@@ -28,7 +28,7 @@ public class JInputJoystick {
 
     /**
      * Creates a controller, of one of the types that has been given.
-     * Controller type which is first found will be created.
+     * Controls type which is first found will be created.
      *
      * @param controllerType_1 Desired controller type.
      * @param controllerType_2 Desired controller type.
@@ -94,7 +94,7 @@ public class JInputJoystick {
      * Gets the human readable controller name.
      * Throws exception if controller doesn't exists.
      *
-     * @return Controller name.
+     * @return Controls name.
      */
     public String getControllerName() {
         return controller.getName();
@@ -176,7 +176,7 @@ public class JInputJoystick {
     }
 
     /**
-     * Controller buttons states. Index of element in array list correspond to
+     * Controls buttons states. Index of element in array list correspond to
      * button number on the controller.
      * If element is true then button is pressed, if element is false then
      * button is not pressed.
@@ -424,8 +424,8 @@ public class JInputJoystick {
     /**
      * X position of right controller joystick.
      * <p>
-     * The same as method getZAxisValue() if controller type is Controller.Type.STICK.
-     * The same as method getXRotationValue() if controller type is Controller.Type.GAMEPAD.
+     * The same as method getZAxisValue() if controller type is Controls.Type.STICK.
+     * The same as method getXRotationValue() if controller type is Controls.Type.GAMEPAD.
      *
      * @return Float value (from -1.0f to 1.0f) corresponding to right controller joystick on x coordinate.
      */
@@ -447,8 +447,8 @@ public class JInputJoystick {
     /**
      * X position, in percentages, of right controller joystick.
      * <p>
-     * The same as method getZAxisPercentage() if controller type is Controller.Type.STICK.
-     * The same as method getXRotationPercentage() if controller type is Controller.Type.GAMEPAD.
+     * The same as method getZAxisPercentage() if controller type is Controls.Type.STICK.
+     * The same as method getXRotationPercentage() if controller type is Controls.Type.GAMEPAD.
      *
      * @return Int value (from 0 to 100) corresponding to right controller joystick on x coordinate.
      */
@@ -471,8 +471,8 @@ public class JInputJoystick {
     /**
      * Y position of right controller joystick.
      * <p>
-     * The same as method getZRotationValue() if controller type is Controller.Type.STICK.
-     * The same as method getYRotationValue() if controller type is Controller.Type.GAMEPAD.
+     * The same as method getZRotationValue() if controller type is Controls.Type.STICK.
+     * The same as method getYRotationValue() if controller type is Controls.Type.GAMEPAD.
      *
      * @return Float value (from -1.0f to 1.0f) corresponding to right controller joystick on y coordinate.
      */
@@ -494,8 +494,8 @@ public class JInputJoystick {
     /**
      * Y position, in percentages, of right controller joystick.
      * <p>
-     * The same as method getZRotationPercentage() if controller type is Controller.Type.STICK.
-     * The same as method getYRotationPercentage() if controller type is Controller.Type.GAMEPAD.
+     * The same as method getZRotationPercentage() if controller type is Controls.Type.STICK.
+     * The same as method getYRotationPercentage() if controller type is Controls.Type.GAMEPAD.
      *
      * @return Int value (from 0 to 100) corresponding to right controller joystick on y coordinate.
      */

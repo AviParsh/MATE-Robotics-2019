@@ -4,7 +4,7 @@ package Interface;
 import Interface.Panels.ColorPanel;
 import Interface.Panels.SliderPanel;
 import net.java.games.input.Controller;
-import Controller.JInputJoystick;
+import Controls.JInputJoystick;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -86,7 +86,7 @@ public class VisualInterface{
         while(t==1) {
             // Get current state of joystick! And check, if joystick is disconnected.
             if (!joystick.pollController()) {
-                System.out.println("Controller disconnected!");
+                System.out.println("Controls disconnected!");
                 break;
             }
 

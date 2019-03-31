@@ -5,7 +5,7 @@ import javax.swing.JSlider;
 import java.awt.*;
 import java.util.Hashtable;
 import net.java.games.input.Controller;
-import Controller.JInputJoystick;
+import Controls.JInputJoystick;
 
 public class SliderPanel extends JPanel{
     private JSlider leftSlider;
