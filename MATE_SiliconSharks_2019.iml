@@ -12,5 +12,6 @@
     <orderEntry type="library" name="jSerialComm-2.4.0" level="project" />
     <orderEntry type="library" name="jutils-1.0.0" level="project" />
     <orderEntry type="library" name="jutils-1.8.5" level="project" />
+    <orderEntry type="library" name="jutils-1.0.01" level="project" />
   </component>
 </module>

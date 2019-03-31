@@ -4,11 +4,13 @@ import javax.swing.*;
 import javax.swing.JSlider;
 import java.awt.*;
 import java.util.Hashtable;
+import net.java.games.input.Controller;
+import Controller.JInputJoystick;
 
 public class SliderPanel extends JPanel{
     private JSlider leftSlider;
     private JSlider rightSlider;
-
+    private JInputJoystick joystick = new JInputJoystick(Controller.Type.STICK, Controller.Type.GAMEPAD);
     public SliderPanel(){
 
         leftSlider = new JSlider(JSlider.VERTICAL, -50, 50, 0);
@@ -56,6 +58,29 @@ public class SliderPanel extends JPanel{
         positionLabels.put(Integer.parseInt(maxLabel.getText()), minLabel);
 
         slider.setLabelTable(positionLabels);
+    }
+
+    public int getyvalr(){
+        if (joystick.getControllerType() == Controller.Type.STICK) {
+            return (joystick.getZRotationPercentage()-50)*-1;
+        }
+        else {
+            return (joystick.getYRotationPercentage()-50)*-1;
+        }
+    }
+    public int getxvalr(){
+        if (joystick.getControllerType() == Controller.Type.STICK) {
+            return joystick.getZAxisPercentage();
+        }
+        else {
+            return joystick.getXRotationPercentage();
+        }
+    }
+    public int getyvall(){
+        return (joystick.getYAxisPercentage()-50)*-1;
+    }
+    public int getxvall(){
+        return joystick.getXAxisPercentage();
     }
 }
 
