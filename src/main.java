@@ -7,8 +7,8 @@ import Interface.VisualInterface;
 
 public class main {
     public static void main(String[] args) {
-       //VisualInterface gui = new VisualInterface();
-        GUIWindow gui = new GUIWindow();
+       VisualInterface gui = new VisualInterface();
+       // GUIWindow gui = new GUIWindow();
 
         Serial ser = new Serial();
 //
