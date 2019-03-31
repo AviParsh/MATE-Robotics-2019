@@ -1,5 +1,3 @@
-package Interface;
-
 import Interface.Panels.CameraPanel;
 import Interface.Panels.Graph.GraphPanel;
 import Interface.Panels.SliderPanel;
@@ -7,12 +5,10 @@ import Interface.Panels.ViewPanel;
 import Interface.Panels.LabelPanel;
 import Interface.Panels.ButtonPanel;
 
-
 import javax.swing.*;
 import java.awt.*;
 
 public class GUIWindow extends JFrame {
-
     private JPanel topPanel;
     private JPanel middlePanel;
     private JPanel bottomPanel;
@@ -51,7 +47,7 @@ public class GUIWindow extends JFrame {
         graph4.setBackground(Color.green);
         graph5.setBackground(Color.blue);
         graph6.setBackground(Color.magenta);
-        graph7.setBackground(Color.black);
+        graph7.setBackground(Color.white);
 
         topPanel.add(graph1);
         topPanel.add(graph2);
@@ -82,10 +78,10 @@ public class GUIWindow extends JFrame {
     }
 
     private void intializeWindow(){
-        System.out.println("GUI initialized.");
         this.setVisible(true);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setSize(1400, 800);
+        this.setSize(1400, 600);
+     //   this.setResizable(false);
     }
 
 }

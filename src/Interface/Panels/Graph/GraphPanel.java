@@ -2,42 +2,37 @@ package Interface.Panels.Graph;
 
 import javax.swing.*;
 import java.awt.*;
+
 import java.util.ArrayList;
 
 public class GraphPanel extends JPanel {
-    private ArrayList<Point> datapoints = new ArrayList<Point>(1);
+
+    private Data data;
+    //private ArrayList<Point> data;
+    private int width, height;
 
     public GraphPanel(){
-        setSize(100,100);
+        height = GraphConstants.maxY - GraphConstants.minY;
+        width = 200;
+
+        this.setSize(width, height);
+
         setVisible(true);
-        for (int i = 0;i<100;i++){
+//        for (int i = 0; i < width ;i++){
+//            data.add(new Point(i, height / 2));
+//        }
+    }
 
-            datapoints.add(new Point(i,50 - i));
-
-        }
+    public void updateData(Data d){
 
     }
 
     public void paintComponent(Graphics g){
         super.paintComponent(g);
-        int i = 0;
-        while(i<datapoints.size()){
-            datapoints.get(i).draw(g,getHeight());
-            i++;
-        }
 
-        g.setColor(Color.black);
-        g.drawOval(10, 10, 50, 50);
-
+//        for(int i = 0; i < data.size(); i++){
+//            data.get(i).draw(g, this.getHeight());
+//        }
     }
-
-    public void updatedata(int reading){
-        datapoints.add(new Point(datapoints.size(),reading));
-
-    }
-
-
-
-
 
 }

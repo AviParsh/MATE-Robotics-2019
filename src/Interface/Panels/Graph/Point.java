@@ -19,8 +19,13 @@ public class Point {
         return y;
     }
 
-    public void draw (Graphics g,int height){
-        g.drawOval(x, height-y, 5, 5);
+    public void draw (Graphics g, int panelHeight){
+        int realY = 0;
+        if(y > 0){
+            realY = panelHeight - y;
+        }
+
+        g.drawOval(x, realY, 5, 5);
     }
 
 }
