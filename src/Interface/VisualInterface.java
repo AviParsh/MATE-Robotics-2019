@@ -21,7 +21,7 @@ public class VisualInterface{
 
         JSlider leftSlider = new JSlider(JSlider.VERTICAL, -50, 50, 0);
         Dimension dl = leftSlider.getPreferredSize();
-        leftSlider.setPreferredSize(new Dimension(dl.width+50,dl.height+550));
+        leftSlider.setPreferredSize(new Dimension(dl.width+100,dl.height+550));
         leftSlider.setBounds(0,0,100,200);
 
         JSlider rightSlider = new JSlider(JSlider.VERTICAL, -50, 50, 0);

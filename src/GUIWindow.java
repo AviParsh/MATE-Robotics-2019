@@ -87,7 +87,7 @@ public class GUIWindow extends JFrame {
             }
             sliders.setLeftSliderpos(logitech.getyvall());
             sliders.setRightSliderpos(logitech.getyvalr());
-
+            sliders.update(sliders.getHeight()); //updates height when form is resized
         }
 
     }
@@ -95,7 +95,7 @@ public class GUIWindow extends JFrame {
     private void intializeWindow(){
         this.setVisible(true);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setSize(1800, 800);
+        this.setSize(1500,750);
         this.setResizable(true);
         runningStatus = true;
     }
