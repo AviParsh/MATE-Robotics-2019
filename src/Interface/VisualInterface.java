@@ -76,7 +76,7 @@ public class VisualInterface{
         while(t==1) {
             // Get current state of joystick! And check, if joystick is disconnected.
             if (!joystick.pollController()) {
-                System.out.println("Controller disconnected!");
+                System.out.println("gamepad disconnected!");
                 break;
             }
 

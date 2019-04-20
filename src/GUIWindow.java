@@ -1,7 +1,6 @@
 
 
-import Controls.Controller;
-import Interface.Panels.CameraPanel;
+import Controls.gamepad;
 import Interface.Panels.Graph.GraphPanel;
 import Interface.Panels.SliderPanel;
 import Interface.Panels.ViewPanel;
@@ -15,16 +14,13 @@ public class GUIWindow extends JFrame {
     private JPanel topPanel;
     private JPanel middlePanel;
     private JPanel bottomPanel;
-
-    private Controller controller;
-
+    private gamepad logitech;
+    private boolean runningStatus;
 
     public GUIWindow(){
         intializeWindow();
 
-        controller = new Controller();
-        System.out.println(controller.numButtons());
-
+        logitech = new gamepad();
         topPanel = new JPanel();
         middlePanel = new JPanel();
         bottomPanel = new JPanel();
@@ -84,13 +80,25 @@ public class GUIWindow extends JFrame {
         pane.add(middlePanel, BorderLayout.CENTER);
         pane.add(bottomPanel, BorderLayout.SOUTH);
 
+        while(runningStatus == true){
+            if (logitech.getpolstatus()==false) {
+                System.out.println("gamepad disconnected!");
+                break;
+            }
+            sliders.setLeftSliderpos(logitech.getyvall());
+            sliders.setRightSliderpos(logitech.getyvalr());
+
+        }
+
     }
 
     private void intializeWindow(){
         this.setVisible(true);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setSize(1400, 600);
-     //   this.setResizable(false);
+        this.setSize(1800, 800);
+        this.setResizable(true);
+        runningStatus = true;
     }
+
 
 }

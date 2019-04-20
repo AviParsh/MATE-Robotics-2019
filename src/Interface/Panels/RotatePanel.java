@@ -49,7 +49,7 @@ public class RotatePanel extends JPanel {
             System.out.println(hstick);
 
             if (!joystick.pollController()) {
-                System.out.println("Controller disconnected!");
+                System.out.println("gamepad disconnected!");
                 break;
             }
 

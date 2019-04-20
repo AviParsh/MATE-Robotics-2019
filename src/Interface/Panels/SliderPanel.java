@@ -10,7 +10,6 @@ import Controls.JInputJoystick;
 public class SliderPanel extends JPanel{
     private JSlider leftSlider;
     private JSlider rightSlider;
-    private JInputJoystick joystick = new JInputJoystick(Controller.Type.STICK, Controller.Type.GAMEPAD);
     public SliderPanel(){
 
         leftSlider = new JSlider(JSlider.VERTICAL, -50, 50, 0);
@@ -60,27 +59,11 @@ public class SliderPanel extends JPanel{
         slider.setLabelTable(positionLabels);
     }
 
-    public int getyvalr(){
-        if (joystick.getControllerType() == Controller.Type.STICK) {
-            return (joystick.getZRotationPercentage()-50)*-1;
-        }
-        else {
-            return (joystick.getYRotationPercentage()-50)*-1;
-        }
+    public void setLeftSliderpos(int val){
+        leftSlider.setValue(val);
     }
-    public int getxvalr(){
-        if (joystick.getControllerType() == Controller.Type.STICK) {
-            return joystick.getZAxisPercentage();
-        }
-        else {
-            return joystick.getXRotationPercentage();
-        }
-    }
-    public int getyvall(){
-        return (joystick.getYAxisPercentage()-50)*-1;
-    }
-    public int getxvall(){
-        return joystick.getXAxisPercentage();
+    public void setRightSliderpos(int val){
+        rightSlider.setValue(val);
     }
 }
 

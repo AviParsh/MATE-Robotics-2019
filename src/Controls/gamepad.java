@@ -1,13 +1,17 @@
 package Controls;
 
-public class Controller {
+public class gamepad {
     private JInputJoystick joystick;
 
-    public Controller(){
+    public gamepad(){
         joystick = new JInputJoystick(net.java.games.input.Controller.Type.STICK, net.java.games.input.Controller.Type.GAMEPAD);
+        if (!joystick.isControllerConnected()) {
+            System.out.println("No controller found!");
+        }
     }
 
     public int getyvalr(){
+        joystick.pollController();
         if (joystick.getControllerType() == net.java.games.input.Controller.Type.STICK) {
             return (joystick.getZRotationPercentage()-50)*-1;
         }
@@ -17,6 +21,7 @@ public class Controller {
     }
 
     public int getxvalr(){
+        joystick.pollController();
         if (joystick.getControllerType() == net.java.games.input.Controller.Type.STICK) {
             return joystick.getZAxisPercentage();
         }
@@ -26,10 +31,12 @@ public class Controller {
     }
 
     public int getyvall(){
+        joystick.pollController();
         return (joystick.getYAxisPercentage()-50)*-1;
     }
 
     public int getxvall(){
+        joystick.pollController();
         return joystick.getXAxisPercentage();
     }
 
@@ -52,5 +59,9 @@ public class Controller {
         }
 
         return 90;
+    }
+
+    public boolean getpolstatus(){
+        return(joystick.pollController());
     }
 }

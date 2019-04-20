@@ -7,11 +7,10 @@ import Interface.VisualInterface;
 
 public class main {
     public static void main(String[] args) {
-       VisualInterface gui = new VisualInterface();
-        //GUIWindow gui = new GUIWindow();
+       //VisualInterface gui = new VisualInterface();
 
-        Serial ser = new Serial();
-//
+       GUIWindow gui = new GUIWindow();
+
 //       Interface.Panels.Graph.Serial s = new Interface.Panels.Graph.Serial(1);
 //       int t = 1;
 //       while(t==1) {
