@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class GraphPanel extends JPanel {
 
     private Data data;
-    //private ArrayList<Point> data;
+    private ArrayList<Point> datapoints =  new ArrayList<Point>();
     private int width, height;
 
     public GraphPanel(){
@@ -18,9 +18,9 @@ public class GraphPanel extends JPanel {
         this.setSize(width, height);
 
         setVisible(true);
-//        for (int i = 0; i < width ;i++){
-//            data.add(new Point(i, height / 2));
-//        }
+        for (int i = 0; i < width ;i++){
+            datapoints.add(new Point(i, height / 2));
+        }
     }
 
     public void updateData(Data d){
@@ -30,9 +30,9 @@ public class GraphPanel extends JPanel {
     public void paintComponent(Graphics g){
         super.paintComponent(g);
 
-//        for(int i = 0; i < data.size(); i++){
-//            data.get(i).draw(g, this.getHeight());
-//        }
+        for(int i = 0; i < datapoints.size(); i++){
+            datapoints.get(i).draw(g, this.getHeight());
+        }
     }
 
 }

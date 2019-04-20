@@ -5,30 +5,51 @@ import java.util.ArrayList;
 
 public class Data {
 
-    private ArrayList<Double> pitchValues;
+    private ArrayList<Double> Values;
+
 
     public Data(){
-        pitchValues = new ArrayList<Double>();
+        Values = new ArrayList<Double>();
+        int i;
+
+        i = 0;
 
     }
 
     public void updateData(String incomingString){
         String[] stringArray = incomingString.split(" ");
-        switch(stringArray[0]){
-            case ("Pitch:"):
-                pitchValues.add(Double.parseDouble(stringArray[1].trim()));
-                break;
-            case ("Um:"):
+        int i = 0;
+
+        while (i<stringArray.length) {
+            switch (stringArray[0]) {
+                case ("Pitch:"):
+                    Values.add(Double.parseDouble(stringArray[i].trim()));
+                    break;
+                case ("Um:"):
+
+            }
+            i++;
 
         }
+
     }
+
+
+    public ArrayList<Double> getData(String in){
+        updateData(in);
+        return Values;
+    }
+
+
+
+
 
     public String toString(){
         String output = "";
 
         output += "Pitch: [";
-        for(int i = 0; i < pitchValues.size(); i++){
-            output += Double.toString(pitchValues.get(i)) + ", ";
+        for(int i = 0; i < Values.size(); i++){
+            output += Double.toString(Values.get(i)) + ", ";
         }
         output += "]";
 

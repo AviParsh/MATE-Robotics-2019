@@ -89,6 +89,8 @@ public class VisualInterface{
 
             if(hstick==.25){
                 frame.repaint();
+                System.out.println("left");
+
             }
             if(hstick==.75){
                 frame.repaint();
