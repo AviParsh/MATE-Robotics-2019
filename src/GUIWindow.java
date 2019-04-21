@@ -29,6 +29,7 @@ public class GUIWindow extends JFrame {
         middlePanel.setLayout(new GridLayout(1, 3));
         bottomPanel.setLayout(new GridLayout(1, 2));
 
+        //top panels
         GraphPanel graph1 = new GraphPanel();
         GraphPanel graph2 = new GraphPanel();
         GraphPanel graph3 = new GraphPanel();
@@ -37,7 +38,7 @@ public class GUIWindow extends JFrame {
         GraphPanel graph6 = new GraphPanel();
         GraphPanel graph7 = new GraphPanel();
 
-        CameraPanel camera = new CameraPanel();
+        //middle panels
         ViewPanel views = new ViewPanel();
         SliderPanel sliders = new SliderPanel();
         Webcam webcam = Webcam.getDefault();
@@ -61,12 +62,14 @@ public class GUIWindow extends JFrame {
         topPanel.add(graph6);
         topPanel.add(graph7);
 
-        camera.setBackground(Color.cyan);
         sliders.setBackground(new Color(84, 110, 122));
+        webcamPanel.setBackground(new Color(84, 110, 122));
+
         middlePanel.add(views);
         middlePanel.add(webcamPanel);
         middlePanel.add(sliders);
 
+        //bottom panels
         LabelPanel label = new LabelPanel();
         ButtonPanel buttons = new ButtonPanel();
 

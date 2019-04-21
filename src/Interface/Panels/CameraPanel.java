@@ -9,8 +9,10 @@ import java.awt.*;
 
 public class CameraPanel extends JPanel {
 
-    public CameraPanel(){
-
+    public CameraPanel(Webcam w){
+        WebcamPanel webcamPanel = new WebcamPanel(w);
+        webcamPanel.setImageSizeDisplayed(true);
+        this.add(webcamPanel);
     }
 
 }
