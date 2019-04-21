@@ -14,8 +14,8 @@ public class main {
     public static void main(String[] args) {
        //VisualInterface gui = new VisualInterface();
 
-        new SplashScreen();
-        //GUIWindow gui1 = new GUIWindow();
+       // new SplashScreen();
+        GUIWindow gui1 = new GUIWindow();
 
 //       Interface.Panels.Graph.Serial s = new Interface.Panels.Graph.Serial(1);
 //       int t = 1;

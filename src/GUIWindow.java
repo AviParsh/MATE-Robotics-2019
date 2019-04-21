@@ -17,7 +17,7 @@ public class GUIWindow extends JFrame {
     private gamepad logitech;
     private boolean runningStatus;
 
-    public GUIWindow(){
+    public GUIWindow() {
         intializeWindow();
 
         logitech = new gamepad();
@@ -39,7 +39,7 @@ public class GUIWindow extends JFrame {
         GraphPanel graph7 = new GraphPanel();
 
         //middle panels
-        ViewPanel views = new ViewPanel();
+        RotatePanel rotate  = new RotatePanel(100,"pitch",getWidth()/3,getHeight()/3);
         SliderPanel sliders = new SliderPanel();
         Webcam webcam = Webcam.getDefault();
         webcam.setViewSize(WebcamResolution.VGA.getSize());
@@ -57,7 +57,7 @@ public class GUIWindow extends JFrame {
         sliders.setBackground(new Color(84, 110, 122));
         webcamPanel.setBackground(new Color(84, 110, 122));
 
-        middlePanel.add(views);
+        middlePanel.add(rotate);
         middlePanel.add(webcamPanel);
         middlePanel.add(sliders);
 
@@ -78,26 +78,54 @@ public class GUIWindow extends JFrame {
         pane.add(middlePanel, BorderLayout.CENTER);
         pane.add(bottomPanel, BorderLayout.SOUTH);
 
+        Dimension stored = getSize();
 
-        while(runningStatus == true){
-            if (logitech.getpolstatus()==false) {
+        while (runningStatus == true) {
+            if (logitech.getpolstatus() == false) {
                 System.out.println("gamepad disconnected!");
                 break;
             }
             sliders.setLeftSliderpos(logitech.getyvall());
             sliders.setRightSliderpos(logitech.getyvalr());
             sliders.update(sliders.getHeight()); //updates height when form is resized
+            if(getSize().height*getSize().width!=stored.height*stored.width) {
+                rotate.Resize(rotate.getWidth(), rotate.getHeight());
+            }
+            stored = getSize();
+
+
+
+            float hstick = logitech.gethpos();
+
+
+            if (hstick == 0.25) {
+
+            } else if (hstick == 0.75) {
+
+            } else if (hstick == 1.0) { //left
+                rotate.getLine().rotate("cc");
+                rotate.Update();
+
+
+            } else if (hstick == 0.5) { //right
+                rotate.getLine().rotate("c");
+                rotate.Update();
+
+            }
+
         }
-
     }
 
-    private void intializeWindow(){
-        this.setVisible(true);
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setSize(1500,750);
-        this.setResizable(true);
-        runningStatus = true;
-    }
+
+        private void intializeWindow() {
+            this.setVisible(true);
+            this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+            this.setSize(1500, 750);
+            this.setResizable(true);
+            runningStatus = true;
+        }
 
 
 }
+
+

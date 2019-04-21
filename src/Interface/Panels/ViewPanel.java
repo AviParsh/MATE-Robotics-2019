@@ -11,24 +11,38 @@ public class ViewPanel extends JPanel {
 
     private RotatePanel pitchPanel;
     private RotatePanel yawPanel;
+    private int width, height;
 
 
 
-    public ViewPanel(){
+    public ViewPanel(int h,int w){
+        height = h;
+        width = w;
 
-        setSize(700,200);
+        setSize(w,h);
 
-        pitchPanel = new RotatePanel(80,"pitch",getSize());
-        yawPanel = new RotatePanel(80, "yaw",getSize());
+        //yawPanel = new RotatePanel(80, "yaw",getSize());
 
-        this.setLayout(new GridLayout(1, 2));
+        this.setLayout(new GridLayout(1, 1));
         this.add(pitchPanel);
-        this.add(yawPanel);
+      //  this.add(yawPanel);
 
-        pitchPanel.setBackground(Color.PINK);
-        yawPanel.setBackground(Color.lightGray);
+        pitchPanel.setBackground(Color.DARK_GRAY);
+      //  yawPanel.setBackground(Color.lightGray);
 
 
     }
 
+    public void Update(int width,int height){
+        this.height = height;
+        this.width = width;
+
+        setSize(width,height);
+
+
+    }
+
+
+    public RotatePanel getPitchPanel(){ return pitchPanel; }
+    public RotatePanel getYawPanel(){ return yawPanel;}
 }

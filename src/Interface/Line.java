@@ -24,11 +24,11 @@ public class Line {
         double xdiff = x2-midx; //length of x component
         double ydiff = -(y2-midy); //length of y component
         if(dir.equals("cc")) {
-            a+=(Math.PI/180)/2.5;
+            a+=(Math.PI/180)/300;
             a = Math.toDegrees(a);
             rotateto(a);
         }else if(dir.equals("c")){
-            a -= (Math.PI / 180) / 2.5;
+            a -= (Math.PI / 180) / 300;
             a = Math.toDegrees(a);
             rotateto(a);
         }
