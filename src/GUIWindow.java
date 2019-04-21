@@ -46,14 +46,6 @@ public class GUIWindow extends JFrame {
         WebcamPanel webcamPanel = new WebcamPanel(webcam);
         webcamPanel.setImageSizeDisplayed(true);
 
-        graph1.setBackground(Color.RED);
-        graph2.setBackground(Color.orange);
-        graph3.setBackground(Color.yellow);
-        graph4.setBackground(Color.green);
-        graph5.setBackground(Color.blue);
-        graph6.setBackground(Color.magenta);
-        graph7.setBackground(Color.white);
-
         topPanel.add(graph1);
         topPanel.add(graph2);
         topPanel.add(graph3);

@@ -12,6 +12,8 @@ public class GraphPanel extends JPanel {
     private int width, height;
 
     public GraphPanel(){
+        setBorder(BorderFactory.createLineBorder(Color.white,3));
+        setBackground(new Color(84, 110, 122));
         height = GraphConstants.maxY - GraphConstants.minY;
         width = 200;
 
