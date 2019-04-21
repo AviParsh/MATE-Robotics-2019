@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="242af0cf-45ba-4596-a1d4-5258b9dcba4c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Graphics/CircleButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MATE_SiliconSharks_2019.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MATE_SiliconSharks_2019.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/GUIWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/GUIWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/Panels/CameraPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/Panels/CameraPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/Panels/ButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/Panels/ButtonPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUIWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUIWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Panels/CameraPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Panels/CameraPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/Panels/ButtonPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Panels/ButtonPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/Panels/SliderPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Panels/SliderPanel.java" afterDir="false" />
     </list>
     <list id="c971ad0b-86e6-40eb-897e-02795b98aa47" name="added to-do list" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,11 +20,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUIWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-212">
-              <caret line="73" column="48" lean-forward="true" selection-start-line="73" selection-start-column="48" selection-end-line="73" selection-end-column="48" />
+            <state relative-caret-position="272">
+              <caret line="64" column="30" lean-forward="true" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interface/Panels/ButtonPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="17" selection-start-line="14" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Graphics/CircleButton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="94" column="39" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,29 +93,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Interface/Panels/SliderPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="33" selection-start-line="15" selection-start-column="40" selection-end-line="16" selection-end-column="33" />
+            <state relative-caret-position="221">
+              <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1991#1992#0" expanded="true" />
                 <element signature="e#2028#2029#0" expanded="true" />
                 <element signature="e#2079#2080#0" expanded="true" />
                 <element signature="e#2119#2120#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Interface/Line.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,8 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interface/VisualInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="61" column="51" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="51" />
+            <state relative-caret-position="346">
+              <caret line="59" column="52" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,7 +175,6 @@
         <option value="$PROJECT_DIR$/src/Interface/ViewPanel.java" />
         <option value="$PROJECT_DIR$/src/Serial/Serial.java" />
         <option value="$PROJECT_DIR$/src/Interface/Panels/LabelPanel.java" />
-        <option value="$PROJECT_DIR$/src/Interface/Panels/ButtonPanel.java" />
         <option value="$PROJECT_DIR$/src/Interface/Line.java" />
         <option value="$PROJECT_DIR$/src/Interface/Panels/Graph/Line.java" />
         <option value="$PROJECT_DIR$/src/Interface/main.java" />
@@ -183,10 +194,12 @@
         <option value="$PROJECT_DIR$/src/Controls/gamepad.java" />
         <option value="$PROJECT_DIR$/src/Interface/test.form" />
         <option value="$PROJECT_DIR$/src/Interface/VisualInterface.java" />
-        <option value="$PROJECT_DIR$/src/Interface/Panels/SliderPanel.java" />
         <option value="$PROJECT_DIR$/src/main.java" />
         <option value="$PROJECT_DIR$/src/Interface/Panels/CameraPanel.java" />
         <option value="$PROJECT_DIR$/src/GUIWindow.java" />
+        <option value="$PROJECT_DIR$/src/Interface/Panels/ButtonPanel.java" />
+        <option value="$PROJECT_DIR$/src/Graphics/CircleButton.java" />
+        <option value="$PROJECT_DIR$/src/Interface/Panels/SliderPanel.java" />
       </list>
     </option>
   </component>
@@ -257,7 +270,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555854914527" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555863999883" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/MATE/slf4j-api-1.7.2.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -459,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555854453508</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="organized gui window code">
+      <created>1555854998019</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1555854998019</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -574,7 +594,8 @@
     <MESSAGE value="fixed control input, made changes to slider panel" />
     <MESSAGE value="fixed slider panel, gui functionality" />
     <MESSAGE value="added camera functionality, fixed up more GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="added camera functionality, fixed up more GUI" />
+    <MESSAGE value="organized gui window code" />
+    <option name="LAST_COMMIT_MESSAGE" value="organized gui window code" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MATE_SiliconSharks_2019.iml">
@@ -617,16 +638,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interface/Panels/Graph/Line.java" />
-    <entry file="file://$PROJECT_DIR$/src/Interface/Panels/ButtonPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interface/Panels/ViewPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -735,30 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interface/Panels/SliderPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="33" selection-start-line="15" selection-start-column="40" selection-end-line="16" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1991#1992#0" expanded="true" />
-            <element signature="e#2028#2029#0" expanded="true" />
-            <element signature="e#2079#2080#0" expanded="true" />
-            <element signature="e#2119#2120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interface/VisualInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="61" column="51" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -782,10 +769,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUIWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-212">
-          <caret line="73" column="48" lean-forward="true" selection-start-line="73" selection-start-column="48" selection-end-line="73" selection-end-column="48" />
+        <state relative-caret-position="272">
+          <caret line="64" column="30" lean-forward="true" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/VisualInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="59" column="52" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/CircleButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="94" column="39" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/Panels/ButtonPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="17" selection-start-line="14" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/Panels/SliderPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1991#1992#0" expanded="true" />
+            <element signature="e#2028#2029#0" expanded="true" />
+            <element signature="e#2079#2080#0" expanded="true" />
+            <element signature="e#2119#2120#0" expanded="true" />
           </folding>
         </state>
       </provider>

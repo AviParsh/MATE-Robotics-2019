@@ -11,7 +11,7 @@ public class SliderPanel extends JPanel{
     private JSlider leftSlider;
     private JSlider rightSlider;
     public SliderPanel(){
-
+        setBorder(BorderFactory.createLineBorder(Color.white,3));
         leftSlider = new JSlider(JSlider.VERTICAL, -50, 50, 0);
         leftSlider.setPreferredSize(new Dimension(500,234));
         leftSlider.setBounds(0,0,100,200);
@@ -66,8 +66,8 @@ public class SliderPanel extends JPanel{
         rightSlider.setValue(val);
     }
     public void update(int heightofpanel){
-        leftSlider.setPreferredSize(new Dimension(100,heightofpanel-10));
-        rightSlider.setPreferredSize(new Dimension(100,heightofpanel-10));
+        leftSlider.setPreferredSize(new Dimension(100,heightofpanel-16));
+        rightSlider.setPreferredSize(new Dimension(100,heightofpanel-16));
    }
 }
 

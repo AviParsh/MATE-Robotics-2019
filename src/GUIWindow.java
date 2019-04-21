@@ -76,12 +76,16 @@ public class GUIWindow extends JFrame {
         bottomPanel.add(label);
         bottomPanel.add(buttons);
 
+
         Container pane = this.getContentPane();
+
         pane.setLayout(new GridLayout(3, 1));
+
 
         pane.add(topPanel, BorderLayout.NORTH);
         pane.add(middlePanel, BorderLayout.CENTER);
         pane.add(bottomPanel, BorderLayout.SOUTH);
+
 
         while(runningStatus == true){
             if (logitech.getpolstatus()==false) {
