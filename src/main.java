@@ -13,16 +13,9 @@ import javax.swing.*;
 public class main {
     public static void main(String[] args) {
        //VisualInterface gui = new VisualInterface();
-//        Webcam webcam = Webcam.getDefault();
-//        WebcamPanel webcamPanel = new WebcamPanel(webcam);
-//        webcamPanel.setImageSizeDisplayed(true);
-//        JFrame frame = new JFrame();
-//        frame.add(webcamPanel);
-//        frame.setLocationRelativeTo(null);
-//        frame.pack();
-//        frame.setVisible(true);
 
-        GUIWindow gui1 = new GUIWindow();
+        new SplashScreen();
+        //GUIWindow gui1 = new GUIWindow();
 
 //       Interface.Panels.Graph.Serial s = new Interface.Panels.Graph.Serial(1);
 //       int t = 1;
