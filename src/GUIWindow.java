@@ -1,11 +1,11 @@
 
 
 import Controls.gamepad;
+import Interface.Panels.*;
 import Interface.Panels.Graph.GraphPanel;
-import Interface.Panels.SliderPanel;
-import Interface.Panels.ViewPanel;
-import Interface.Panels.LabelPanel;
-import Interface.Panels.ButtonPanel;
+import com.github.sarxos.webcam.Webcam;
+import com.github.sarxos.webcam.WebcamPanel;
+import com.github.sarxos.webcam.WebcamResolution;
 
 import javax.swing.*;
 import java.awt.*;
@@ -26,7 +26,7 @@ public class GUIWindow extends JFrame {
         bottomPanel = new JPanel();
 
         topPanel.setLayout(new GridLayout(1, 7));
-        middlePanel.setLayout(new GridLayout(1, 2));
+        middlePanel.setLayout(new GridLayout(1, 3));
         bottomPanel.setLayout(new GridLayout(1, 2));
 
         GraphPanel graph1 = new GraphPanel();
@@ -37,14 +37,13 @@ public class GUIWindow extends JFrame {
         GraphPanel graph6 = new GraphPanel();
         GraphPanel graph7 = new GraphPanel();
 
-     //   CameraPanel camera = new CameraPanel();
-
-        JPanel rightPanel = new JPanel(new GridLayout(1, 2));
+        CameraPanel camera = new CameraPanel();
         ViewPanel views = new ViewPanel();
         SliderPanel sliders = new SliderPanel();
-
-        rightPanel.add(views);
-        rightPanel.add(sliders);
+        Webcam webcam = Webcam.getDefault();
+        webcam.setViewSize(WebcamResolution.VGA.getSize());
+        WebcamPanel webcamPanel = new WebcamPanel(webcam);
+        webcamPanel.setImageSizeDisplayed(true);
 
         graph1.setBackground(Color.RED);
         graph2.setBackground(Color.orange);
@@ -62,10 +61,11 @@ public class GUIWindow extends JFrame {
         topPanel.add(graph6);
         topPanel.add(graph7);
 
-//        camera.setBackground(Color.cyan);
-
-       // middlePanel.add(camera);
-        middlePanel.add(rightPanel);
+        camera.setBackground(Color.cyan);
+        sliders.setBackground(new Color(84, 110, 122));
+        middlePanel.add(views);
+        middlePanel.add(webcamPanel);
+        middlePanel.add(sliders);
 
         LabelPanel label = new LabelPanel();
         ButtonPanel buttons = new ButtonPanel();
