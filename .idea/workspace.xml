@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="242af0cf-45ba-4596-a1d4-5258b9dcba4c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/GUIWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/GUIWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/Panels/Graph/GraphPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/Panels/Graph/GraphPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Panels/ButtonPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Panels/ButtonPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/Panels/ButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATE_SiliconSharks_2019/Interface/Panels/ButtonPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/Panels/LabelPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Panels/LabelPanel.java" afterDir="false" />
     </list>
     <list id="c971ad0b-86e6-40eb-897e-02795b98aa47" name="added to-do list" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUIWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+            <state relative-caret-position="1037">
+              <caret line="64" column="23" lean-forward="true" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,10 +29,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Interface/Panels/LabelPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interface/Panels/ButtonPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+            <state relative-caret-position="153">
+              <caret line="18" selection-start-line="18" selection-end-line="19" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graphics/CircleButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1553">
-              <caret line="98" column="57" lean-forward="true" selection-start-line="98" selection-start-column="57" selection-end-line="98" selection-end-column="57" />
+            <state relative-caret-position="312">
+              <caret line="94" column="31" lean-forward="true" selection-start-line="94" selection-end-line="95" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,7 +145,6 @@
         <option value="$PROJECT_DIR$/src/Interface/CameraPanel.java" />
         <option value="$PROJECT_DIR$/src/Interface/ViewPanel.java" />
         <option value="$PROJECT_DIR$/src/Serial/Serial.java" />
-        <option value="$PROJECT_DIR$/src/Interface/Panels/LabelPanel.java" />
         <option value="$PROJECT_DIR$/src/Interface/Line.java" />
         <option value="$PROJECT_DIR$/src/Interface/Panels/Graph/Line.java" />
         <option value="$PROJECT_DIR$/src/Interface/main.java" />
@@ -155,11 +165,12 @@
         <option value="$PROJECT_DIR$/src/Interface/VisualInterface.java" />
         <option value="$PROJECT_DIR$/src/main.java" />
         <option value="$PROJECT_DIR$/src/Interface/Panels/CameraPanel.java" />
-        <option value="$PROJECT_DIR$/src/Graphics/CircleButton.java" />
         <option value="$PROJECT_DIR$/src/Interface/Panels/SliderPanel.java" />
         <option value="$PROJECT_DIR$/src/Interface/Panels/Graph/GraphPanel.java" />
         <option value="$PROJECT_DIR$/src/GUIWindow.java" />
         <option value="$PROJECT_DIR$/src/Interface/Panels/ButtonPanel.java" />
+        <option value="$PROJECT_DIR$/src/Graphics/CircleButton.java" />
+        <option value="$PROJECT_DIR$/src/Interface/Panels/LabelPanel.java" />
       </list>
     </option>
   </component>
@@ -230,7 +241,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555864899498" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555865829850" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/MATE/slf4j-api-1.7.2.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -453,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555864551203</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="added more buttons">
+      <created>1555864945327</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1555864945327</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -571,7 +589,8 @@
     <MESSAGE value="organized gui window code" />
     <MESSAGE value="updates to button panel, and general looks" />
     <MESSAGE value="graph panel colors fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="graph panel colors fixed" />
+    <MESSAGE value="added more buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="added more buttons" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MATE_SiliconSharks_2019.iml">
@@ -600,16 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interface/Panels/LabelPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -769,18 +778,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUIWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphics/CircleButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1553">
-          <caret line="98" column="57" lean-forward="true" selection-start-line="98" selection-start-column="57" selection-end-line="98" selection-end-column="57" />
+        <state relative-caret-position="1037">
+          <caret line="64" column="23" lean-forward="true" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -789,8 +788,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interface/Panels/ButtonPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+        <state relative-caret-position="153">
+          <caret line="18" selection-start-line="18" selection-end-line="19" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/CircleButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="94" column="31" lean-forward="true" selection-start-line="94" selection-end-line="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/Panels/LabelPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
