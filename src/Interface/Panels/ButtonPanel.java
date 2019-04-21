@@ -10,6 +10,10 @@ public class ButtonPanel extends JPanel {
     private JButton shutDownButton;
     private JButton button1;
     private JButton button2;
+    private JButton button3;
+    private JButton button4;
+    private JButton button5;
+    private JButton button6;
 
     public ButtonPanel(){
         setBorder(BorderFactory.createLineBorder(Color.white,3));
@@ -18,16 +22,20 @@ public class ButtonPanel extends JPanel {
         killButton = new CircleButton("Kill Thrusters");
         button1 = new CircleButton("button1");
         button2 = new CircleButton("button2");
-        this.setLayout(new GridLayout(1, 4));
-
-        shutDownButton.setForeground(Color.RED);
-        shutDownButton.setBackground(Color.blue);
-        shutDownButton.setForeground(Color.blue);
+        button3 = new CircleButton("button3");
+        button4 = new CircleButton("button4");
+        button5 = new CircleButton("button5");
+        button6 = new CircleButton("button6");
+        this.setLayout(new GridLayout(2, 4));
 
         this.add(killButton);
         this.add(shutDownButton);
         this.add(button1);
         this.add(button2);
+        this.add(button3);
+        this.add(button4);
+        this.add(button5);
+        this.add(button6);
     }
 
 
