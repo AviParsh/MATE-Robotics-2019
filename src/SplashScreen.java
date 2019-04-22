@@ -9,6 +9,7 @@ public class SplashScreen {
     JLabel text=new JLabel("WELCOME");//Creating a JLabel object and adding text to it
     JProgressBar progressBar=new JProgressBar();//Creating an object of JProgressBar
     JLabel message=new JLabel();
+    Boolean isDone = false;
     SplashScreen()
     {
         createGUI();
@@ -65,8 +66,15 @@ public class SplashScreen {
                 progressBar.setValue(i);//Setting value of Progress Bar
                 message.setText("LOADING "+Integer.toString(i)+"%");//Setting text of the message JLabel
                 i++;
+                if(i==23)
+                    Thread.sleep(2000);
+                if(i==67)
+                    Thread.sleep(1500);
+                if(i==85)
+                    Thread.sleep(1000);
                 if(i==100)
                     frame.dispose();
+                    isDone = true;
             }catch(Exception e){
                 e.printStackTrace();
             }
@@ -74,5 +82,8 @@ public class SplashScreen {
 
 
         }
+    }
+    public Boolean getIsDone(){
+        return isDone;
     }
 }

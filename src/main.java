@@ -11,11 +11,16 @@ import com.github.sarxos.webcam.WebcamResolution;
 import javax.swing.*;
 
 public class main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
        //VisualInterface gui = new VisualInterface();
 
-       // new SplashScreen();
-        GUIWindow gui1 = new GUIWindow();
+        SplashScreen splash = new SplashScreen();
+        while (true){
+            if(splash.getIsDone()==true) {
+                GUIWindow gui1 = new GUIWindow();
+                break;
+            }
+        }
 
 //       Interface.Panels.Graph.Serial s = new Interface.Panels.Graph.Serial(1);
 //       int t = 1;

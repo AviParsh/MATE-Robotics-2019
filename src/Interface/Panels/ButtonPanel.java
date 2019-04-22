@@ -26,16 +26,16 @@ public class ButtonPanel extends JPanel {
         button4 = new CircleButton("button4");
         button5 = new CircleButton("button5");
         button6 = new CircleButton("button6");
-        this.setLayout(new GridLayout(2, 4));
+        this.setLayout(new GridLayout(2, 1));
 
         this.add(killButton);
         this.add(shutDownButton);
-        this.add(button1);
-        this.add(button2);
-        this.add(button3);
-        this.add(button4);
-        this.add(button5);
-        this.add(button6);
+//        this.add(button1);
+//        this.add(button2);
+//        this.add(button3);
+//        this.add(button4);
+//        this.add(button5);
+//        this.add(button6);
     }
 
 

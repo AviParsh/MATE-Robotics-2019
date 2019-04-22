@@ -10,6 +10,8 @@ import java.awt.*;
 
 public class RotatePanel extends JPanel {
     private Line line;
+    private Line rline;
+
     private String type;
     private gamepad Logitech;
     private JLabel ameasure = new JLabel();
@@ -41,6 +43,7 @@ public class RotatePanel extends JPanel {
             this.type = type;
 
         }
+        rline = new Line((width / 2) - rad, height / 2, (width / 2) + rad, height / 2);
 
         repaint();
 
@@ -50,6 +53,8 @@ public class RotatePanel extends JPanel {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
         line.draw(g2);
+        rline.draw(g2);
+        rline.setcolor(g2,Color.RED);
 
 
 
@@ -66,15 +71,16 @@ public class RotatePanel extends JPanel {
 
     public Line getLine(){return line;}
 
+    public Line getRLine(){return rline;}
+
     public void Resize(int w, int h){
         width = w;
         height = h;
         line = new Line((width / 2) - rad, height / 2, (width / 2) + rad, height / 2);
+        rline = new Line((width / 2) - rad, height / 2, (width / 2) + rad, height / 2);
 
 
     }
-
-
 
 
 

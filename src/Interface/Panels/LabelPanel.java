@@ -22,15 +22,20 @@ public class LabelPanel extends JPanel {
         status.add(new JLabel("           Status:        •"));
         status.add(new JLabel("           Status:        •"));
         status.add(new JLabel("           Status:        •"));
+        status.add(new JLabel("           Status:        •"));
+        status.add(new JLabel("           Status:        •"));
 
+        labels.add(new JLabel("Elapsed Time:"));
         labels.add(new JLabel("Depth:"));
-        labels.add(new JLabel("Knots:"));
-        labels.add(new JLabel("Connection Status:"));
-        labels.add(new JLabel("ComPort:"));
-        labels.add(new JLabel("Depth:"));
-        labels.add(new JLabel("Knots:"));
-        labels.add(new JLabel("Connection Status:"));
-        labels.add(new JLabel("ComPort:"));
+        labels.add(new JLabel("Temperature:"));
+        labels.add(new JLabel("Battery Voltage:"));
+        labels.add(new JLabel("Expected Current:")); //calculate in java
+        labels.add(new JLabel("Measured Current:"));
+        labels.add(new JLabel("Front Servo Angle:"));
+        labels.add(new JLabel("Back Servo Angle:"));
+        labels.add(new JLabel("Velocity:"));
+        labels.add(new JLabel("Gripper Status:"));
+
 
         values.add(new JLabel("yuh time"));
         values.add(new JLabel("yuh time"));
@@ -40,8 +45,10 @@ public class LabelPanel extends JPanel {
         values.add(new JLabel("yuh time"));
         values.add(new JLabel("yuh time"));
         values.add(new JLabel("yuh time"));
+        values.add(new JLabel("yuh time"));
+        values.add(new JLabel("yuh time"));
 
-        this.setLayout(new GridLayout(8, 3));
+        this.setLayout(new GridLayout(10, 3));
 
         for(int i = 0; i < labels.size(); i++){
             labels.get(i).setFont(myFont);
@@ -58,7 +65,8 @@ public class LabelPanel extends JPanel {
             this.add(labels.get(i));
             this.add(values.get(i));
         }
-
-
+    }
+    public void settext(String s, int i){
+        values.get(i).setText(s);
     }
 }

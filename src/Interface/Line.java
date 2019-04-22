@@ -24,11 +24,11 @@ public class Line {
         double xdiff = x2-midx; //length of x component
         double ydiff = -(y2-midy); //length of y component
         if(dir.equals("cc")) {
-            a+=(Math.PI/180)/300;
+            a+=(Math.PI/180)/0.7;
             a = Math.toDegrees(a);
             rotateto(a);
         }else if(dir.equals("c")){
-            a -= (Math.PI / 180) / 300;
+            a -= (Math.PI / 180) / 0.7;
             a = Math.toDegrees(a);
             rotateto(a);
         }
@@ -77,6 +77,10 @@ public class Line {
         x1 += x1change;
         double y1change = -y2change;
         y1 += y1change;
+    }
+
+    public void setcolor(Graphics2D g, Color c){
+        g.setColor(c);
     }
 }
 //test
