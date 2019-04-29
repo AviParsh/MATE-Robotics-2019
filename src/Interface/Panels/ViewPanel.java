@@ -9,8 +9,9 @@ import java.awt.*;
 
 public class ViewPanel extends JPanel {
 
-    private RotatePanel pitchPanel;
-    private RotatePanel yawPanel;
+    private RotatePanel r1;
+    private RotatePanel r2;
+    private RotatePanel r3;
     private int width, height;
 
 
@@ -18,16 +19,24 @@ public class ViewPanel extends JPanel {
     public ViewPanel(int h,int w){
         height = h;
         width = w;
+        r1 = new RotatePanel(70,"pitch",width/9,height/3);
+        r2 = new RotatePanel(70,"pitch", width/9,height/3);
+        r3 = new RotatePanel(70,"pitch",width/9,height/3);
+
 
         setSize(w,h);
 
         //yawPanel = new RotatePanel(80, "yaw",getSize());
 
-        this.setLayout(new GridLayout(1, 1));
-        this.add(pitchPanel);
+        this.setLayout(new GridLayout(1, 3));
+        this.add(r1);
+        this.add(r2);
+        this.add(r3);
+
+
       //  this.add(yawPanel);
 
-        pitchPanel.setBackground(Color.DARK_GRAY);
+        r1.setBackground(Color.DARK_GRAY);
       //  yawPanel.setBackground(Color.lightGray);
 
 
@@ -42,7 +51,17 @@ public class ViewPanel extends JPanel {
 
     }
 
+    public void Resize(int width, int height){
+        r1.Resize(width/9,height/3);
+        r2.Resize(width/9,height/3);
+        r3.Resize(width/9,height/3);
 
-    public RotatePanel getPitchPanel(){ return pitchPanel; }
-    public RotatePanel getYawPanel(){ return yawPanel;}
+
+    }
+
+
+    public RotatePanel getr1(){ return r1; }
+    public RotatePanel getr2(){ return r2;}
+    public RotatePanel getr3(){return r3;}
+
 }

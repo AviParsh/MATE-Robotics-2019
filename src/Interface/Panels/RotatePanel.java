@@ -39,7 +39,8 @@ public class RotatePanel extends JPanel {
         setBackground(Color.DARK_GRAY);
 
         if(type.equals("pitch")) {
-            line = new Line((width / 2) - rad, height / 2, (width / 2) + rad, height / 2);
+            line = new Line((width /2) - rad, height / 2, (width/2) + rad, height / 2);
+
             this.type = type;
 
         }
@@ -78,7 +79,6 @@ public class RotatePanel extends JPanel {
         height = h;
         line = new Line((width / 2) - rad, height / 2, (width / 2) + rad, height / 2);
         rline = new Line((width / 2) - rad, height / 2, (width / 2) + rad, height / 2);
-
 
     }
 

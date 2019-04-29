@@ -16,20 +16,26 @@ public class GUIWindow extends JFrame {
     private gamepad logitech;
     private boolean runningStatus;
     private String[] values;
+    private ViewPanel views;
 
     public GUIWindow() throws InterruptedException {
         intializeWindow();
         Client javaClient = new Client();
         javaClient.startConnection("localhost", 7937);
 
+        views = new ViewPanel(getHeight(),getWidth());
+
+
         logitech = new gamepad();
         topPanel = new JPanel();
         middlePanel = new JPanel();
         bottomPanel = new JPanel();
 
+
         topPanel.setLayout(new GridLayout(1, 7));
         middlePanel.setLayout(new GridLayout(1, 3));
         bottomPanel.setLayout(new GridLayout(1, 2));
+
 
         //top panels
         GraphPanel graph1 = new GraphPanel();
@@ -39,7 +45,7 @@ public class GUIWindow extends JFrame {
 
 
         //middle panels
-        RotatePanel rotate = new RotatePanel(100,"pitch",getWidth()/3,getHeight()/3);
+        // rotate = new RotatePanel(100,"pitch",getWidth()/3,getHeight()/3);
         SliderPanel sliders = new SliderPanel();
         Webcam webcam = Webcam.getDefault();
         webcam.setViewSize(WebcamResolution.VGA.getSize());
@@ -55,7 +61,7 @@ public class GUIWindow extends JFrame {
         sliders.setBackground(new Color(84, 110, 122));
         webcamPanel.setBackground(new Color(84, 110, 122));
 
-        middlePanel.add(rotate);
+        middlePanel.add(views);
         middlePanel.add(webcamPanel);
         middlePanel.add(sliders);
 
@@ -81,13 +87,14 @@ public class GUIWindow extends JFrame {
             if (logitech.getpolstatus() == false) {
                 System.out.println("gamepad disconnected!");
                 break;
+
             }
             sliders.setLeftSliderpos(logitech.getyvall());
             sliders.setRightSliderpos(logitech.getyvalr());
             sliders.update(sliders.getHeight()); //updates height when form is resized
 
             if (getSize().height * getSize().width != stored.height * stored.width) {
-                rotate.Resize(rotate.getWidth(), rotate.getHeight());
+                views.Resize(getWidth(), getHeight());
             }
             stored = getSize();
 
@@ -98,24 +105,24 @@ public class GUIWindow extends JFrame {
             } else if (hstick == 0.75) {
 
             } else if (hstick == 1.0) { //left
-                rotate.getLine().rotate("cc");
+                views.getr1().getLine().rotate("cc");
             } else if (hstick == 0.5) { //right
-                rotate.getLine().rotate("c");
+                views.getr1().getLine().rotate("c");
             }
+//
+//                javaClient.sendMessage("sending from client"); //line for sending messages
+//
+//                String message = javaClient.getMessage();
+//                if (message != null) {
+//                    System.out.println(message);
+//                    values = message.split(",");
+//                    views.getr1().getRLine().rotateto(Double.parseDouble(values[0]));
+//
+//                } else {
+//                    System.out.println("No message being received.");
+//                }
 
-                javaClient.sendMessage("sending from client"); //line for sending messages
-
-                String message = javaClient.getMessage();
-                if (message != null) {
-                    System.out.println(message);
-                    values = message.split(",");
-                    rotate.getRLine().rotateto(Double.parseDouble(values[0]));
-
-                } else {
-                    System.out.println("No message being received.");
-                }
-
-            rotate.Update();
+            views.getr1().Update();
 
         }
 

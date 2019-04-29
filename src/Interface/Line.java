@@ -1,4 +1,6 @@
 package Interface;
+import javafx.scene.shape.Circle;
+
 import java.awt.*;
 import java.awt.geom.Line2D;
 public class Line {
@@ -37,6 +39,10 @@ public class Line {
         g.setColor(Color.GREEN);
 
         g.draw(new Line2D.Double(x1,y1,x2,y2));
+        g.setColor(Color.RED);
+
+        g.fillOval((int)(x2-2.5),(int)(y2-2.5),5,5);
+
     }
     public double getangle() {
         double a;
